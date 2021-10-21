@@ -1,0 +1,257 @@
+@import 'reset';
+
+//  default 
+ .container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding:0 25px;
+}
+
+// variables
+$primary-color: #3e3e58;
+$btn-border-color : #979797;
+$btn-shadow-color : #4449a2;
+$light-green : #3dbdb6;
+$text-color : #ffffff;
+$border-radius : 4px;
+
+// mixins
+@mixin padding {
+    padding: 16px 20px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    padding: 20px 50px;
+    transition: .5s;
+    z-index: 1;
+}
+
+header{
+    a.logo{
+        display: inline-block;
+        img{
+            display: block;
+        }
+    }
+    ul.nav-links{
+        display: flex;
+        align-items: center;
+        .nav-items{
+            margin: 0 38px;
+            position: relative;
+            &:last-child{
+                margin-right: 0;
+                border: 1px solid $btn-border-color;
+                border-radius: $border-radius;
+                padding: 10px 20px;
+            }
+            &:first-child::before{
+                content: "";
+                width: 72px;
+                height: 4px;
+                position: absolute;
+                border-bottom: 4px solid $light-green;
+                bottom: -26px;
+                left: -50%;
+            }
+            &:first-child a{ 
+                opacity: 1;
+            }
+            a{
+                text-decoration: none;
+                color: $text-color;
+                opacity: 0.5;
+                font-size: 14px;
+            }
+        }
+    }
+    .burger{
+        display: none;
+    }
+}
+
+.hero{
+    background-color: $primary-color;
+    max-height: 575px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .container{
+        position: relative;
+        top:170px;
+        h1{
+            color: $text-color;
+            font-size: 48px;
+            letter-spacing: -2.12px;
+            line-height: 54px;
+        }
+        .hero-content{
+            width: 422px;
+            form{
+                margin-top: 47px;
+                display: flex;
+            }
+            input{
+                @include padding();
+                background-color: rgba(176, 176, 176, 0.5);
+                border: none;
+                width: 302px;
+                font-size: 16px;
+                border-radius:  $border-radius 0 0 $border-radius ;
+                color: $text-color;
+                &::placeholder{
+                    color: $text-color;
+                    font-size: 16px;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            button{
+                @include padding();
+                width:120px;
+                border: none;
+                background-color: $light-green;
+                color: $text-color;
+                font-size: 14px;
+                box-shadow: 0 1px 6px 0 $btn-shadow-color;
+                border-radius: 0 $border-radius $border-radius 0;
+            }
+        }
+    }
+    .hero-img{
+        float: right;
+        position: relative;
+        margin-top: -125px;
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+    .hero{
+        text-align: center;
+        .hero-content{
+            width: 100% !important;
+            form{
+                justify-content: center;
+            }
+        }
+        .hero-img{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    header{
+        padding: 25px;
+        ul.nav-links{
+            .nav-items{
+                margin: 0 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        overflow: hidden;
+    }
+    header{
+        ul.nav-links{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #1f2532;
+            height: 100vh;
+            width: 320px;
+            transform: translateX(100%);
+            transition: .5s ease-out ;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 75px;
+            .nav-items{
+                margin: 20px 22px;
+                &:first-child::before{
+                    bottom:-10px
+                }
+                &:last-child{
+                    margin-right: 22px;
+                }
+            }
+        }
+        .burger{
+            display: block;    
+            .line1{
+                display: block;
+            }        
+            .line2{
+                transform: rotate(0deg);
+                transition: .5s;
+            }
+            .line3{
+                transform: rotate(0deg);
+                transition: .5s;
+            }
+            div{
+                width: 25px;
+                height: 3px;
+                background-color: $text-color;
+                margin: 5px;
+            }
+        }
+    }
+    
+    .show-on-mobile{
+        transform: translate(0) !important;
+        transition: .5s ease-out ;
+    }
+
+    .show-on-mobile + .burger{    
+        .line1{
+            visibility: hidden;
+        }
+        .line2{
+            transform: rotate(45deg);
+            transition: .5s;
+        }
+        .line3{
+            transform: rotate(315deg) translate(5px,-6px);
+            transition: .5s;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .hero{
+        .container{
+            .hero-content{
+                h1{
+                    font-size: 32px;
+                    letter-spacing: -1.12px;
+                    line-height: 40px;
+                }
+                form{
+                    flex-direction: column;
+                    align-items: center;
+                    input{
+                        width: 100%;
+                        border-radius: $border-radius;
+                    }
+                    button{
+                        margin-top: 25px;
+                        border-radius: $border-radius;
+                    }
+                }
+            }
+        }
+    }
+}

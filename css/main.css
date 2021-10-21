@@ -189,6 +189,31 @@ header .burger {
   margin-top: -100px;
 }
 
+.our-clients {
+  padding: 36px 0;
+  background-color: #f9fafa;
+  border: 1px solid #eeeeee;
+}
+
+.our-clients .client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-clients .client-logos li {
+  margin: 0 22px;
+}
+
+.our-clients .client-logos li a {
+  display: inline-block;
+}
+
+.our-clients .client-logos li a img {
+  display: block;
+}
+
 @media screen and (max-width: 1080px) {
   .hero {
     text-align: center;
@@ -214,9 +239,6 @@ header .burger {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
   header ul.nav-links {
     position: absolute;
     top: 0;
@@ -273,6 +295,15 @@ header .burger {
   .show-on-mobile + .burger .line3 {
     transform: rotate(315deg) translate(5px, -6px);
     transition: .5s;
+  }
+  .our-clients {
+    padding: 16px 0;
+  }
+  .our-clients .client-logos {
+    flex-direction: column;
+  }
+  .our-clients .client-logos li {
+    margin: 16px;
   }
 }
 

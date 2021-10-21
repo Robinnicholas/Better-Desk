@@ -134,7 +134,29 @@ header{
     }
 }
 
+// clients section 
+.our-clients{
+    padding: 36px 0;
+    background-color: #f9fafa;
+    border: 1px solid #eeeeee;
+    .client-logos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 22px;
+            a{
+                display: inline-block;
+              img{
+                display: block;
+              }  
+            }
+        }
+    }
+}
 
+// media queries starts
 @media screen and (max-width:1080px) {
     .hero{
         text-align: center;
@@ -162,9 +184,6 @@ header{
 }
 
 @media screen and (max-width:768px) {
-    body{
-        overflow: hidden;
-    }
     header{
         ul.nav-links{
             position: absolute;
@@ -226,6 +245,15 @@ header{
         .line3{
             transform: rotate(315deg) translate(5px,-6px);
             transition: .5s;
+        }
+    }
+    .our-clients{
+        padding: 16px 0;
+        .client-logos{
+            flex-direction: column;
+            li{
+                margin: 16px;
+            }
         }
     }
 }

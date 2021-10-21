@@ -80,13 +80,13 @@ header{
 
 .hero{
     background-color: $primary-color;
-    max-height: 575px;
+    max-height: 590px;
     height: 100vh;
     position: relative;
     overflow: hidden;
     .container{
         position: relative;
-        top:170px;
+        top:182px;
         h1{
             color: $text-color;
             font-size: 48px;
@@ -130,7 +130,7 @@ header{
     .hero-img{
         float: right;
         position: relative;
-        margin-top: -125px;
+        margin-top: -100px;
     }
 }
 

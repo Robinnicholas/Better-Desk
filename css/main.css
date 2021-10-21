@@ -67,7 +67,7 @@ header {
   right: 0;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: #3e3e58;
   align-items: center;
   padding: 20px 50px;
   transition: .5s;
@@ -214,9 +214,101 @@ header .burger {
   display: block;
 }
 
+.Chat-with-us {
+  padding: 82px 0;
+}
+
+.Chat-with-us .container {
+  text-align: center;
+}
+
+.Chat-with-us .container h2 {
+  font-size: 32px;
+  line-height: 44px;
+  color: #333333;
+  margin-bottom: 39px;
+}
+
+.Chat-with-us .container h2 span {
+  font-weight: 700;
+}
+
+.Chat-with-us .container .chat-services {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Chat-with-us .container .chat-services li {
+  width: 25%;
+}
+
+.Chat-with-us .container .chat-services li h3 {
+  font-size: 16px;
+  color: #333333;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  margin: 14px 0 12px;
+}
+
+.Chat-with-us .container .chat-services li p {
+  color: #72808e;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.Chat-with-us .container .chat-services li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #2d8cff;
+}
+
+.Chat-with-us .container .chat-services li a .arrow {
+  border: solid  #2d8cff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-left: 6px;
+  transform: rotate(-45deg);
+  vertical-align: middle;
+}
+
+.Chat-with-us .container .chat-services .support {
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(#3dbdb6, #0089ce);
+}
+
+.Chat-with-us .container .chat-services .help {
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(#7a86cc, #9facf8);
+}
+
+.Chat-with-us .container .chat-services .chat {
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(#f3778f, #f26a95, #f15a9d);
+}
+
 @media screen and (max-width: 1080px) {
   .hero {
     text-align: center;
+    max-height: unset;
+    height: auto;
   }
   .hero .hero-content {
     width: 100% !important;
@@ -225,7 +317,9 @@ header .burger {
     justify-content: center;
   }
   .hero .hero-img {
-    display: none;
+    margin-top: 25vh;
+    float: unset;
+    width: 100%;
   }
 }
 
@@ -304,6 +398,20 @@ header .burger {
   }
   .our-clients .client-logos li {
     margin: 16px;
+  }
+  .Chat-with-us {
+    padding: 32px 0;
+  }
+  .Chat-with-us .container .chat-services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Chat-with-us .container .chat-services li {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .Chat-with-us .container .chat-services li:last-child {
+    margin-bottom: 0;
   }
 }
 

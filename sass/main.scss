@@ -14,10 +14,19 @@ $btn-shadow-color : #4449a2;
 $light-green : #3dbdb6;
 $text-color : #ffffff;
 $border-radius : 4px;
-
+$footer-color:#1f2532;
 // mixins
 @mixin padding {
     padding: 16px 20px;
+}
+
+@mixin circle {
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
 }
 
 header{
@@ -27,7 +36,7 @@ header{
     right: 0;
     display: flex;
     justify-content: space-between;
-    background-color: transparent;
+    background-color: $primary-color;
     align-items: center;
     padding: 20px 50px;
     transition: .5s;
@@ -156,10 +165,76 @@ header{
     }
 }
 
+// chat with us
+.Chat-with-us{
+    padding: 82px 0;
+    .container{
+        text-align: center;
+        h2{
+            font-size: 32px;
+            line-height: 44px;
+            color: #333333;
+            margin-bottom: 39px;
+            span{
+                font-weight: 700;
+            }
+        }
+        .chat-services{
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                width: 25%;
+                h3{
+                    font-size: 16px;
+                    color: #333333;
+                    letter-spacing: 0.4px;
+                    font-weight: 600;
+                    margin: 14px 0 12px;
+                }
+                p{
+                    color: #72808e;
+                    line-height: 25px;
+                    letter-spacing: 0.2px;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #2d8cff;
+                    .arrow{
+                        border: solid  #2d8cff;
+                        border-width: 0 2px 2px 0;
+                        display: inline-block;
+                        padding: 2px;
+                        margin-left: 6px;
+                        transform: rotate(-45deg);
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .support{
+                @include circle();
+                background: linear-gradient(#3dbdb6,#0089ce);
+            }
+            .help{
+                @include circle();
+                background: linear-gradient(#7a86cc,#9facf8);
+            }
+            .chat{
+                @include circle();
+                background: linear-gradient(#f3778f,#f26a95,#f15a9d);
+            }
+        }
+    }
+}
+
 // media queries starts
 @media screen and (max-width:1080px) {
     .hero{
         text-align: center;
+        max-height: unset;
+        height: auto;
         .hero-content{
             width: 100% !important;
             form{
@@ -167,7 +242,9 @@ header{
             }
         }
         .hero-img{
-            display: none;
+            margin-top: 25vh;
+            float: unset;
+            width: 100%;
         }
     }
 }
@@ -189,7 +266,7 @@ header{
             position: absolute;
             top: 0;
             right: 0;
-            background-color: #1f2532;
+            background-color: $footer-color;
             height: 100vh;
             width: 320px;
             transform: translateX(100%);
@@ -253,6 +330,22 @@ header{
             flex-direction: column;
             li{
                 margin: 16px;
+            }
+        }
+    }
+    .Chat-with-us{
+        padding: 32px 0;
+        .container{
+            .chat-services{
+                flex-direction: column;
+                align-items: center;
+                li{
+                    width: 100%;
+                    margin-bottom: 50px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }

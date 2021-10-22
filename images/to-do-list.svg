@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="521" height="461" viewBox="0 0 521 461">
+    <defs>
+        <rect id="a" width="520" height="461" rx="8"/>
+        <rect id="b" width="90" height="40" rx="5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#FFF" xlink:href="#a"/>
+        <path fill="#F5F9FC" d="M0 0h521v70H0z"/>
+        <use fill="#20BBEF" stroke="#DADFE5" transform="translate(391 15.095)" xlink:href="#b"/>
+        <text fill="#FFF" font-family="OpenSans, Open Sans" font-size="16" transform="translate(391 15.095)">
+            <tspan x="36.918" y="26">New</tspan>
+        </text>
+        <path fill="#FFF" stroke="#20BBEF" stroke-width="1.5" d="M416.52 27.495h-3.04v6.08h-6.08v3.04h6.08v6.08h3.04v-6.08h6.08v-3.04h-6.08z"/>
+        <text fill="#3D4D65" font-family="OpenSans, Open Sans" font-size="20">
+            <tspan x="40.795" y="42.5">To Do List</tspan>
+        </text>
+        <g transform="translate(144 19)">
+            <rect width="51" height="32" fill="#20BBEF" rx="16"/>
+            <text fill="#FFF" font-family="OpenSans, Open Sans" font-size="20">
+                <tspan x="19.5" y="23.5">6</tspan>
+            </text>
+        </g>
+        <g transform="translate(34 98)">
+            <rect width="7" height="195" x="467" fill="#E9EDF2" rx="3.5"/>
+            <g stroke-width="2" transform="translate(424 8)">
+                <circle cx="16" cy="16" r="16" stroke="#DADFE5"/>
+                <path stroke="#DADFE5" d="M7.925 15.954l5.413 5.746 10.737-11.4"/>
+                <circle cx="16" cy="86" r="16" stroke="#20BBEF"/>
+                <circle cx="16" cy="156" r="16" stroke="#20BBEF"/>
+                <circle cx="16" cy="226" r="16" stroke="#20BBEF"/>
+                <circle cx="16" cy="296" r="16" stroke="#20BBEF"/>
+            </g>
+            <text fill="#54657E" font-family="OpenSans-Light, Open Sans" font-size="15" font-weight="300" transform="translate(41 70)">
+                <tspan x="0" y="16">Mon, 24 Oct</tspan>
+            </text>
+            <text fill="#606D78" font-family="OpenSans, Open Sans" font-size="16" transform="translate(41 70)">
+                <tspan x="0" y="40">Remind </tspan> <tspan x="61.578" y="40" font-family="OpenSans-Semibold, Open Sans" font-weight="500">John</tspan> <tspan x="96.445" y="40"> to email the customer </tspan> <tspan x="268.609" y="40" font-family="OpenSans-Semibold, Open Sans" font-weight="500">Jessie Lee</tspan>
+            </text>
+            <text fill="#54657E" font-family="OpenSans-Light, Open Sans" font-size="15" font-weight="300" transform="translate(41 140)">
+                <tspan x="0" y="16">Mon, 24 Oct</tspan>
+            </text>
+            <text fill="#606D78" font-family="OpenSans-Semibold, Open Sans" font-size="16" font-weight="500" transform="translate(41 140)">
+                <tspan x="0" y="40">Pek</tspan> <tspan x="28.211" y="40" font-family="OpenSans, Open Sans" font-weight="normal"> assigned you a task </tspan> <tspan x="181.594" y="40">Make a sales report</tspan>
+            </text>
+            <text fill="#54657E" font-family="OpenSans-Light, Open Sans" font-size="15" font-weight="300" transform="translate(41 210)">
+                <tspan x="0" y="16">Mon, 24 Oct</tspan>
+            </text>
+            <text fill="#606D78" font-family="OpenSans, Open Sans" font-size="16" transform="translate(41 210)">
+                <tspan x=".105" y="40">Prepare for presentation</tspan>
+            </text>
+            <g>
+                <text fill="#54657E" font-family="OpenSans-Light, Open Sans" font-size="15" font-weight="300" transform="translate(41 280)">
+                    <tspan x="0" y="16">Mon, 24 Oct</tspan>
+                </text>
+                <text fill="#606D78" font-family="OpenSans, Open Sans" font-size="16" transform="translate(41 280)">
+                    <tspan x=".105" y="40">Prepare for presentation</tspan>
+                </text>
+            </g>
+            <g opacity=".6" text-decoration="line-through">
+                <text fill="#54657E" font-family="OpenSans-Light, Open Sans" font-size="15" font-weight="300" transform="translate(41)">
+                    <tspan x="0" y="16">Today, 21 Oct</tspan>
+                </text>
+                <text fill="#606D78" font-family="OpenSans, Open Sans" font-size="16" transform="translate(41)">
+                    <tspan x=".105" y="40">Prepare for presentation</tspan>
+                </text>
+            </g>
+            <g transform="translate(0 6)">
+                <path stroke="#E9EDF2" stroke-linecap="square" stroke-width=".5" d="M7.25 10.5v70.007"/>
+                <path stroke="#20BBEF" stroke-linecap="square" stroke-width=".5" d="M7.25 210.99v81.512"/>
+                <path stroke="#F38428" stroke-linecap="square" stroke-width=".5" d="M7.25 150.99v69.032"/>
+                <path stroke="#F5474A" stroke-linecap="square" stroke-width=".5" d="M7.25 70.99v69.032"/>
+                <circle cx="7.5" cy="7.5" r="7.5" fill="#E9EDF2"/>
+                <circle cx="7.5" cy="76.5" r="7.5" fill="#F5474A"/>
+                <circle cx="7.5" cy="145.5" r="7.5" fill="#F38428"/>
+                <circle cx="7.5" cy="214.5" r="7.5" fill="#F38428"/>
+                <circle cx="7.5" cy="285.5" r="7.5" fill="#20BBEF"/>
+            </g>
+        </g>
+    </g>
+</svg>

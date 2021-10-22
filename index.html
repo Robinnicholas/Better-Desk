@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Better Desk</title>
+    <title>Better Desk</title>      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- header  -->
     <header>
         <a href="javascript:void(0)" class="logo">
-            <img src="images/betterDesk.svg" alt="Better Desk"/>
+            <img src="images/betterDesk.svg" width="124" height="24" alt="Better Desk"/>
         </a>
         <ul class="nav-links">
-            <li class="nav-items"><a href="#home">Home</a></li>
+            <li class="nav-items active"><a href="#home">Home</a></li>
             <li class="nav-items"><a href="#products">Products</a></li>
             <li class="nav-items"><a href="#demo">Demo</a></li>
             <li class="nav-items"><a href="#resources">Resources</a></li>
             <li class="nav-items"><a href="#signin">Sign In</a></li>
-            <li class="nav-items"><a href="#signup">Sign Up</a></li>
+            <li class="nav-items"><button>Sign Up</button></li>
         </ul>
         <div class="burger" onclick="navigation()">
             <div class="line1"></div>
@@ -40,93 +41,391 @@
         </div>
         <img src="images/hero-img.svg" class="hero-img" alt="A man with his family" />
     </section>
+    <!-- clients -->
     <section class="our-clients">
         <div class="container">
             <ul class="client-logos">
                 <li>
-                    <a href="javascript:void(0)">
-                        <img src="images/baseCamp.png" 
-                            srcset="images/baseCamp.png 1x,
-                                    images/baseCamp@2x 2x,
-                                    images/baseCamp@3x 3x" 
+                    <img src="images/baseCamp.png" 
+                        srcset="images/baseCamp.png 1x,
+                                images/baseCamp@2x 2x,
+                                images/baseCamp@3x 3x" 
+                            width="123"
+                            height="29"
                             alt="baseCamp" 
-                        />
-                    </a>
+                    />
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
-                        <img src="images/grubHub.png" 
-                            srcset="images/grubHub.png 1x,
-                                    images/grubHub@2x.png 2x,
-                                    images/grubHub@3x.png 3x"
-                            alt="grubHub" 
-                        />
-                    </a>
+                    <img src="images/grubHub.png" 
+                        srcset="images/grubHub.png 1x,
+                                images/grubHub@2x.png 2x,
+                                images/grubHub@3x.png 3x"
+                        width="81"
+                        height="29"        
+                        alt="grubHub" 
+                    />
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
-                        <img src="images/trello.png" 
-                            srcset="images/trello.png 1x,
-                                    images/trello@2x.png 2x,
-                                    images/trello@3x.png 3x" 
-                            alt="trello" 
-                        />
-                    </a>
+                    <img src="images/trello.png" 
+                        srcset="images/trello.png 1x,
+                                images/trello@2x.png 2x,
+                                images/trello@3x.png 3x" 
+                        width="87"
+                        height="25"
+                        alt="trello" 
+                    />
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
-                        <img src="images/buffer.png" 
-                            srcset="images/buffer.png 1x,
-                                    images/buffer@2x.png 2x,
-                                    images/buffer@3x.png 3x"
-                            alt="buffer" />
-                    </a>
+                    <img src="images/buffer.png" 
+                        srcset="images/buffer.png 1x,
+                                images/buffer@2x.png 2x,
+                                images/buffer@3x.png 3x"
+                        width="95"
+                        height="19"        
+                        alt="buffer" 
+                    />
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
-                        <img src="images/pocket.png" 
-                            srcset="images/pocket.png 1x,
-                                    images/pocket@2x.png 2x,
-                                    images/pocket@3x.png 3x"        
-                            alt="pocket" 
-                        />
-                    </a>
+                    <img src="images/pocket.png" 
+                        srcset="images/pocket.png 1x,
+                                images/pocket@2x.png 2x,
+                                images/pocket@3x.png 3x"        
+                        width="108"
+                        height="28"        
+                        alt="pocket" 
+                    />
                 </li>
             </ul>
         </div>
     </section>
-    
+    <!-- chat with us -->
     <section class="Chat-with-us">
         <div class="container">
             <h2>Let’s make customer support interaction <br> <span>more human</span> & <span>more reliable.</span></h2>
             <ul class="chat-services">
                 <li>
-                    <div class="circle support">
-                        <img src="images/phone.svg" alt="Phone" />
-                    </div>
+                    <figure class="circle support">
+                        <img src="images/phone.svg" width="37" height="37" alt="Phone" />
+                    </figure>
                     <h3>Support</h3>
                     <p>Vestibulum rutrum quam vitae fringilla tincid.</p>
                     <a href="javascript:void(0)">Learn More <span class="arrow"></span></a>
                 </li>
                 <li>
-                    <div class="circle help">
-                        <img src="images/help.svg" alt="Help" />
-                    </div>
+                    <figure class="circle help">
+                        <img src="images/help.svg" width="39" height="39" alt="Help" />
+                    </figure>
                     <h3>Help Desk</h3>
-                    <p>Vestibulum rutrum quam vitae fringilla tincid.</p>
+                    <p>Cras quis nulla commodo, aliquam lectus sed.</p>
                     <a href="javascript:void(0)">Learn More <span class="arrow"></span></a>
                 </li>
                 <li>
-                    <div class="circle chat">
-                        <img src="images/chat.svg" alt="Chat" />
-                    </div>
+                    <figure class="circle chat">
+                        <img src="images/chat.svg" width="39" height="40" alt="Chat" />
+                    </figure>
                     <h3>Chat</h3>
-                    <p>Vestibulum rutrum quam vitae fringilla tincid.</p>
+                    <p>Fusce vehicula dolor arcu, sit amet blandit dolor.</p>
                     <a href="javascript:void(0)">Learn More <span class="arrow"></span></a>
                 </li>
             </ul>
         </div>
     </section>
+    <!-- why betterDesk -->
+    <section class="why-we">
+        <div class="container">
+            <h2>Why BetterDesk</h2>
+            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+            <ul class="our-vision">
+                <li class="details">
+                    <div class="glass-bg">
+                        <h4>Support for growing business</h4>
+                        <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta.</p>
+                    </div>
+                    <ul class="our-achievements">
+                        <li>1 billion interactions per year</li>
+                        <li>Minimal effort</li>
+                        <li>Maximum knowledge</li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="images/to-do-list.svg" height="461" alt="Todo list" />
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about">
+        <div class="container">
+            <h2>Learn More About Us</h2>
+            <ul class="about-links">
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/women.jpg" 
+                            srcset="images/women.jpg 1x,
+                                    images/women@2x.jpg 2x,
+                                    images/women@3x.jpg 3x"
+                                    height="280"    
+                            alt="Women" 
+                        />
+                        <p>Vestibulum rutrum quam vitae fringilla.</p>
+                        <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/book.jpg" 
+                            srcset="images/book.jpg 1x,
+                                    images/book@2x.jpg 2x,
+                                    images/book@3x.jpg 3x"
+                                height="280"
+                            alt="Book" 
+                        />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscin.</p>                        
+                        <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="images/work.jpg"
+                            srcset="images/work.jpg 1x,
+                                    images/work@2x.jpg 2x,
+                                    images/work@3x.jpg 3x"
+                            height="280"        
+                            alt="Work" 
+                        />
+                        <p>Fusce vehicula dolor arcu, sit amet blan.</p>
+                        <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- report -->
+    <section class="report">
+        <div class="container">
+            <div class="content-wrapper">
+                <p><span>BetterDesk</span> is recognized as top Unified Communications provider in 2016 Magic Quandrant</p>
+                <a href="javascript:void(0)">Read Report</a>
+            </div>
+            <img src="images/gartner.png" 
+                srcset="images/gartner.png 1x,
+                        images/gartner@2x.png 2x,
+                        images/gartner@3x.png 3x"
+                alt="Gartner" 
+            />
+        </div>
+    </section>
+
+    <section class="video paused">
+        <a href="javascript:void(0)">
+            <div class="video-text-wrapper">
+                <p>“When BetterDesk was introduced, our business grows a lot — Strongly recommend.”<span>Sharon Herrera at Buffer</span></p>
+                <figure class="circle support">
+                    <div class="triangle"></div>
+                </figure>
+            </div>
+            <video onclick="video()" poster="images/video.jpg">
+                <source src="images/infinity-war.mp4" type="video/mp4">
+            </video>
+        </a>
+    </section>
+
+    <section class="users">
+        <div class="container">
+            <ul class="user-details">
+                <li>
+                    <figure>
+                        <img src="images/user-1.png" 
+                            srcset="images/user-1.png 1x,
+                                    images/user-1@2x.png 2x,
+                                    images/user-1@3x.png 3x"
+                            width="80"
+                            height="80"        
+                            alt="User 1" 
+                        />
+                    </figure>
+                    <div class="user-wrapper">
+                        <span>Sharon Herrera</span>
+                        <img src="images/buffer.png" 
+                            srcset="images/buffer.png 1x,
+                                    images/buffer@2x.png 2x,
+                                    images/buffer@3x.png 3x"
+                            width="95"
+                            height="19"        
+                            alt="logo" 
+                        />
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user-2.png" 
+                            srcset="images/user-2.png 1x,
+                                    images/user-2@2x.png 2x,
+                                    images/user-2@3x.png 3x"
+                            width="80"
+                            height="80"
+                            alt="User 2" 
+                        />
+                        <img src="images/triangle.png" 
+                            srcset="images/triangle.png 1x,
+                                    images/triangle@2x.png 2x,
+                                    images/triangle@3x.png 3x"
+                            width="21"
+                            height="25"        
+                            class="play" 
+                            alt="Play" 
+                        />
+                    </figure>
+                    <div class="user-wrapper">
+                        <span>Sharon Herrera</span>
+                        <img src="images/pocket.png" 
+                            srcset="images/pocket.png 1x,
+                                    images/pocket@2x.png 2x,
+                                    images/pocket@3x.png 3x"
+                            width="108"
+                            height="28"
+                            alt="logo" 
+                        />
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user-3.png" 
+                            srcset="images/user-3.png 1x
+                                    images/user-3@2x.png 2x
+                                    images/user-3@3x.png 3x"
+                            width="80"
+                            height="80"
+                            alt="User 3" 
+                        />
+                        <img src="images/triangle.png" 
+                            srcset="images/triangle.png 1x,
+                                    images/triangle@2x.png 2x,
+                                    images/triangle@3x.png 3x"
+                            width="21"
+                            height="25"        
+                            class="play" 
+                            alt="Play" 
+                        />
+                    </figure>
+                    <div class="user-wrapper">
+                        <span>Sharon Herrera</span>
+                        <img src="images/baseCamp.png"
+                            srcset="images/baseCamp.png 1x,
+                                    images/baseCamp@2x.png 2x,
+                                    images/baseCamp@3x.png 3x"
+                            width="123"
+                            height="29"
+                            alt="logo" 
+                        />
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user-4.png" 
+                            srcset="images/user-4.png 1x,
+                                    images/user-4@2x.png 2x,
+                                    images/user-4@3x.png 3x"
+                            width="80"
+                            height="80"
+                            alt="User 4" 
+                        />
+                        <img src="images/triangle.png" 
+                            srcset="images/triangle.png 1x,
+                                    images/triangle@2x.png 2x,
+                                    images/triangle@3x.png 3x"
+                            width="21"
+                            height="25"        
+                            class="play" 
+                            alt="Play" 
+                        />
+                    </figure>
+                    <div class="user-wrapper">
+                        <span>Sharon Herrera</span>
+                        <img src="images/trello.png" 
+                            srcset="images/trello.png 1x,
+                                    images/trello@2x.png 2x,
+                                    images/trello@3x.png 3x"
+                            width="87"
+                            height="25"
+                            alt="logo" 
+                        />
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="signup">
+        <div class="container">
+            <h2>Great Products Deliver Happiness to Users</h2>
+            <form action="#">
+                <input type="text" placeholder="Enter your work email">
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <ul class="footer-wrapper">
+                <li class="footer-details">
+                    <ul class="footer-nav">
+                        <li class="company-description">
+                            <img src="images/betterDesk.svg" 
+                                srcset="images/betterDesk.svg 1x,
+                                        images/betterDesk@2x.svg 2x,
+                                        images/betterDesk@3x.svg 3x"
+                                width="124"
+                                height="24"
+                                alt="BetterDesk" 
+                            />
+                            <p>This template is created by @iamjoannajiang. UX Designer @ <u>www.betterdesign.io</u></p>
+                        </li>
+                        <li>
+                            <h3>ABOUT</h3>
+                            <ul>
+                                <li><a href="javascript:void(0)">Our Mission</a></li>
+                                <li><a href="javascript:void(0)">Company</a></li>
+                                <li><a href="javascript:void(0)">Jobs</a></li>
+                                <li><a href="javascript:void(0)">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>SUPPORT</h3>
+                            <ul>
+                                <li><a href="javascript:void(0)">FAQ</a></li>
+                                <li><a href="javascript:void(0)">Help Center</a></li>
+                                <li><a href="javascript:void(0)">Terms of Service</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>CONTACT</h3>
+                            <ul>
+                                <li><a href="javascript:void(0)">Email Us</a></li>
+                                <li><a href="javascript:void(0)">Live Chat</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="social-icon">
+                    <ul>
+                        <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="copyrights">
+        <div class="container">
+            <p> Thank you for downloading BetterDesk Sketch template. You are invited to join 1300+ designers on <span>UX Design Community</span> on <span>Slack</span> at www.uxdesigncommunity.com <br> We look forward to see you there!</p>
+        </div>
+    </footer>
+
     <script src="js/app.js" ></script>
 </body>
 </html>

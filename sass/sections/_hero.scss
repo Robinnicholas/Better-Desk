@@ -1,0 +1,84 @@
+.hero{
+    background-color: $primary-color;
+    max-height: 590px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    .container{
+        position: relative;
+        top:182px;
+        h1{
+            font-family: "ProximaNova";
+            color: $text-color;
+            font-size: 48px;
+            letter-spacing: -2.12px;
+            line-height: 54px;
+            font-weight: 400;
+        }
+        .hero-content{
+            width: 422px;
+            form{
+                margin-top: 47px;
+                display: flex;
+            }
+            @include signup();
+        }
+    }
+    .hero-img{
+        float: right;
+        position: relative;
+        margin-top: -100px;
+        width: 712px;
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+    .hero{
+        text-align: center;
+        .hero-content{
+            width: 100% !important;
+            form{
+                justify-content: center;
+            }
+        }
+        .hero-img{
+            margin-top: 30vh;
+            float: unset;
+            width: 28%;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .hero{
+        .container{
+            top:100px;
+            .hero-content{
+                h1{
+                    font-size: 32px;
+                    letter-spacing: -1.12px;
+                    line-height: 40px;
+                }
+                form{
+                    flex-direction: column;
+                    align-items: center;
+                    input{
+                        width: 100%;
+                        border-radius: $border-radius;
+                    }
+                    button{
+                        margin-top: 25px;
+                        border-radius: $border-radius;
+                    }
+                }
+            }
+        }
+        .hero-img{
+            margin-top: 20vh;
+            float: unset;
+            width: 75%;
+        }
+    }
+}

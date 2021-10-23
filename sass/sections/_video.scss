@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+.video{
+    @extend %scroll-top;
+    .fa-pause{
+        display: none;
+    }
+    &.playing{
+       a{
+           display: block;
+           &::before{
+               background-color: transparent;
+           }
+       }
+       .video-text-wrapper{
+           display: none;
+       }
+       
+    }
+    &.pausing{
+        .fa-play{
+            display: none;
+        }
+        .fa-pause{
+            display: block;
+        }
+    }
+    position: relative;
+    text-align: center;
+    a{
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #081941;
+            opacity: 50%;
+            width: 100%;
+            height: 100%;
+        }
+        .video-text-wrapper{
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            width:100%;
+            transform: translateX(-50%);
+            .wrapper{
+                width: 60%;
+                margin: 0 auto;
+                q{
+                    color: #ffffff;
+                    margin: 0 auto;
+                    font-size: 40px;
+                    line-height: 43px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: italic;
+                    font-weight: 300;
+                }
+                p{
+                    margin: 30px auto 60px;
+                    font-style: normal;
+                    display: block;
+                    font-size: 18px;
+                    color: #ffffff;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 400;
+                }
+            }
+           button{
+                @include circle();
+                border: none;
+                color: #3d3f6d;
+                width: 70px;
+                height:70px;
+                line-height: 70px;
+                background: linear-gradient(to right bottom, #3dbdb6,#0089ce);
+                i{
+                    font-size: 25px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .video{
+        a{
+            .video-text-wrapper{
+                .wrapper{
+                    q{
+                        font-size: 28px;
+                        line-height: 30px;
+                        width: 60%;
+                        font-weight: 400;
+                    }
+                    p{
+                        margin: 20px 0 40px;
+                        display: block;
+                        font-size: 18px;
+                    }
+               }
+               button{
+                    @include circle();
+                    width: 50px;
+                    height:50px;
+                    line-height: 50px;
+                    text-align: center;
+                    i{
+                        font-size: 18px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .video{
+        a{
+            .video-text-wrapper{
+                .wrapper{
+                    width: 100%;
+                    q{
+                        font-size: 16px;
+                        line-height: 16px;
+                        width: 80%;
+                    }
+                    p{
+                        margin: 14px 0 18px;
+                        display: block;
+                        font-size: 14px;
+                    }
+                }
+            }
+            button{
+                @include circle();
+                width: 30px;
+                height:30px;
+                .triangle{
+                    width: 16px;
+                    height: 9px;
+                    border-top: 5px solid transparent;
+                    border-left: 10px solid #3d3f6d;
+                    border-bottom: 5px solid transparent;
+                }
+            }
+        }
+    }
+}

@@ -11,6 +11,9 @@ function video(){
         videoSection.classList.replace("paused", "playing"); 
     } else{
         videoTag.pause();
-        videoSection.classList.replace("playing", "paused"); 
+        videoSection.classList.replace("playing", "pausing"); 
+        setTimeout(()=>{
+            videoSection.classList.replace("pausing", "paused"); 
+        },500)
     }
 }

@@ -34,8 +34,8 @@
             <div class="hero-content">
                 <h1>Build a <br> company your customers love.</h1>
                 <form action="#">
-                    <input type="text" placeholder="Enter your work email">
-                    <button>Sign Up</button>
+                    <input type="email" class="input-box" placeholder="Enter your work email">
+                    <button class="btn">Sign Up</button>
                 </form>
             </div>
         </div>
@@ -48,8 +48,8 @@
                 <li>
                     <img src="images/baseCamp.png" 
                         srcset="images/baseCamp.png 1x,
-                                images/baseCamp@2x 2x,
-                                images/baseCamp@3x 3x" 
+                                images/baseCamp@2x.png 2x,
+                                images/baseCamp@3x.png 3x" 
                             width="123"
                             height="29"
                             alt="baseCamp" 
@@ -135,8 +135,8 @@
         <div class="container">
             <h2>Why BetterDesk</h2>
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
-            <ul class="our-vision">
-                <li class="details">
+            <div class="our-vision">
+                <div class="details">
                     <div class="glass-bg">
                         <h4>Support for growing business</h4>
                         <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta.</p>
@@ -146,11 +146,11 @@
                         <li>Minimal effort</li>
                         <li>Maximum knowledge</li>
                     </ul>
-                </li>
-                <li>
-                    <img src="images/to-do-list.svg" height="461" alt="Todo list" />
-                </li>
-            </ul>
+                </div>
+                <div>
+                    <img src="images/to-do-list.svg" alt="Todo list" />
+                </div>
+            </div>
         </div>
     </section>
     <!-- about -->
@@ -159,43 +159,34 @@
             <h2>Learn More About Us</h2>
             <ul class="about-links">
                 <li>
-                    <a href="javascript:void(0)">
-                        <img src="images/women.jpg" 
-                            srcset="images/women.jpg 1x,
-                                    images/women@2x.jpg 2x,
-                                    images/women@3x.jpg 3x"
-                                    height="280"    
-                            alt="Women" 
-                        />
-                        <p>Vestibulum rutrum quam vitae fringilla.</p>
-                        <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
-                    </a>
+                    <img src="images/women.jpg" 
+                        srcset="images/women.jpg 1x,
+                                images/women@2x.jpg 2x,
+                                images/women@3x.jpg 3x"
+                        alt="Women" 
+                    />
+                    <p>Vestibulum rutrum quam vitae fringilla.</p>
+                    <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
-                        <img src="images/book.jpg" 
-                            srcset="images/book.jpg 1x,
-                                    images/book@2x.jpg 2x,
-                                    images/book@3x.jpg 3x"
-                                height="280"
-                            alt="Book" 
-                        />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscin.</p>                        
-                        <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
-                    </a>
+                    <img src="images/book.jpg" 
+                        srcset="images/book.jpg 1x,
+                                images/book@2x.jpg 2x,
+                                images/book@3x.jpg 3x"
+                        alt="Book" 
+                    />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscin.</p>                        
+                    <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
-                        <img src="images/work.jpg"
-                            srcset="images/work.jpg 1x,
-                                    images/work@2x.jpg 2x,
-                                    images/work@3x.jpg 3x"
-                            height="280"        
-                            alt="Work" 
-                        />
-                        <p>Fusce vehicula dolor arcu, sit amet blan.</p>
-                        <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
-                    </a>
+                    <img src="images/work.jpg"
+                        srcset="images/work.jpg 1x,
+                                images/work@2x.jpg 2x,
+                                images/work@3x.jpg 3x"
+                        alt="Work" 
+                    />
+                    <p>Fusce vehicula dolor arcu, sit amet blan.</p>
+                    <a href="javascript:void(0)" class="learn-more">Learn More <span class="arrow"></span></a>
                 </li>
             </ul>
         </div>
@@ -219,12 +210,16 @@
     <section class="video paused">
         <a href="javascript:void(0)">
             <div class="video-text-wrapper">
-                <p>“When BetterDesk was introduced, our business grows a lot — Strongly recommend.”<span>Sharon Herrera at Buffer</span></p>
-                <figure class="circle support">
-                    <div class="triangle"></div>
-                </figure>
+                <div class="wrapper">
+                    <q>“When BetterDesk was introduced, our business grows a lot — Strongly recommend.”</q>
+                    <p>Sharon Herrera at Buffer</p>
+                </div>
+                <button class="circle support">
+                    <i class="fas fa-play"></i>
+                    <i class="fas fa-pause"></i>
+                </button>
             </div>
-            <video onclick="video()" poster="images/video.jpg">
+            <video onclick="video()" poster="images/video.jpg" loop>
                 <source src="images/infinity-war.mp4" type="video/mp4">
             </video>
         </a>
@@ -233,7 +228,7 @@
     <section class="users">
         <div class="container">
             <ul class="user-details">
-                <li>
+                <li class="active">
                     <figure>
                         <img src="images/user-1.png" 
                             srcset="images/user-1.png 1x,
@@ -245,13 +240,13 @@
                         />
                     </figure>
                     <div class="user-wrapper">
-                        <span>Sharon Herrera</span>
+                        <p>Sharon Herrera</p>
                         <img src="images/buffer.png" 
                             srcset="images/buffer.png 1x,
                                     images/buffer@2x.png 2x,
                                     images/buffer@3x.png 3x"
                             width="95"
-                            height="19"        
+                            height="20"        
                             alt="logo" 
                         />
                     </div>
@@ -271,19 +266,19 @@
                                     images/triangle@2x.png 2x,
                                     images/triangle@3x.png 3x"
                             width="21"
-                            height="25"        
+                            height="20"        
                             class="play" 
                             alt="Play" 
                         />
                     </figure>
                     <div class="user-wrapper">
-                        <span>Sharon Herrera</span>
-                        <img src="images/pocket.png" 
-                            srcset="images/pocket.png 1x,
-                                    images/pocket@2x.png 2x,
-                                    images/pocket@3x.png 3x"
-                            width="108"
-                            height="28"
+                        <p>Diana Moreno</p>
+                        <img src="images/trello.png" 
+                            srcset="images/trello.png 1x,
+                                    images/trello@2x.png 2x,
+                                    images/trello@3x.png 3x"
+                            width="87"
+                            height="25"
                             alt="logo" 
                         />
                     </div>
@@ -303,13 +298,13 @@
                                     images/triangle@2x.png 2x,
                                     images/triangle@3x.png 3x"
                             width="21"
-                            height="25"        
+                            height="20"        
                             class="play" 
                             alt="Play" 
                         />
                     </figure>
                     <div class="user-wrapper">
-                        <span>Sharon Herrera</span>
+                        <p>Diane Tran</p>
                         <img src="images/baseCamp.png"
                             srcset="images/baseCamp.png 1x,
                                     images/baseCamp@2x.png 2x,
@@ -341,7 +336,7 @@
                         />
                     </figure>
                     <div class="user-wrapper">
-                        <span>Sharon Herrera</span>
+                        <p>Julia Wilson</p>
                         <img src="images/trello.png" 
                             srcset="images/trello.png 1x,
                                     images/trello@2x.png 2x,
@@ -360,26 +355,25 @@
         <div class="container">
             <h2>Great Products Deliver Happiness to Users</h2>
             <form action="#">
-                <input type="text" placeholder="Enter your work email">
-                <button>Sign Up</button>
+                <input type="email" class="input-box" placeholder="Enter your work email">
+                <button class="btn">Sign Up</button>
             </form>
         </div>
     </section>
 
     <section class="footer">
         <div class="container">
-            <ul class="footer-wrapper">
-                <li class="footer-details">
+            <div class="footer-wrapper">
+                <div class="col-left">
                     <ul class="footer-nav">
                         <li class="company-description">
-                            <img src="images/betterDesk.svg" 
-                                srcset="images/betterDesk.svg 1x,
-                                        images/betterDesk@2x.svg 2x,
-                                        images/betterDesk@3x.svg 3x"
+                            <a href="javascript:void(0)">
+                                <img src="images/betterDesk.svg" 
                                 width="124"
                                 height="24"
                                 alt="BetterDesk" 
-                            />
+                                />
+                            </a>
                             <p>This template is created by @iamjoannajiang. UX Designer @ <u>www.betterdesign.io</u></p>
                         </li>
                         <li>
@@ -408,24 +402,22 @@
                             </ul>
                         </li>
                     </ul>
-                </li>
-                <li class="social-icon">
+                </div>
+                <div class="col-right">
                     <ul>
                         <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="copyrights">
-        <div class="container">
-            <p> Thank you for downloading BetterDesk Sketch template. You are invited to join 1300+ designers on <span>UX Design Community</span> on <span>Slack</span> at www.uxdesigncommunity.com <br> We look forward to see you there!</p>
-        </div>
+    <footer>    
+        <p> Thank you for downloading BetterDesk Sketch template. You are invited to join 1300+ designers on <span>UX Design Community</span> on <span>Slack</span> at <u>www.uxdesigncommunity.com</u> <br> We look forward to see you there!</p>
     </footer>
 
-    <script src="js/app.js" ></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

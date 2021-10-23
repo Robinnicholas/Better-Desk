@@ -1,0 +1,120 @@
+.why-we{
+    @extend %scroll-top;
+    padding: 80px 0;
+    background:linear-gradient(to right,#3dbdb6, #0089ce);
+    color:$text-color;
+    text-align: center;
+    font-weight: 400;
+    h2{
+        font-size: 40px;
+        margin-bottom: 33px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    div.our-vision{
+        display: flex;
+        justify-content: space-between;
+        div.details{
+            width: 46%;
+            &:first-child{
+                    padding: 46px 0;
+                    margin-right: 20px;
+                    text-align: left;
+                .glass-bg{
+                    padding: 20px 25px;
+                    max-width: 502px;
+                    background-color: rgba(24, 144, 164, 0.5);
+                    border-radius: 3px;
+                    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+                    h4{
+                        font-size: 20px;
+                        line-height: 56px;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 0;
+                    }
+                }
+                .our-achievements{
+                    padding: 20px 35px;
+                    li{
+                        margin-right: 0;
+                        font-size: 20px;
+                        color: #0b5e6e;
+                        padding: 0;
+                        line-height: 56px;
+                    }
+                }      
+            }
+        }
+        div{
+            width: auto;
+            height: auto;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    .why-we{
+        div.our-vision{
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            div.details{
+                &:first-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .why-we{
+        padding: 45px 0;
+        h2{font-size: 32px;}
+        p{
+            font-size: 16px;
+            margin-bottom: 45px;
+        }
+        div.our-vision{
+            div.details{
+                width: 75%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .why-we{
+        div.our-vision{
+            div.details{
+                width: 100%;
+                &:first-child{
+                    .glass-bg{
+                        h4{
+                            line-height: 25px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .our-achievements{
+                        li{
+                            font-size: 16px;
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

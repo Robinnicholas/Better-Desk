@@ -1,0 +1,30 @@
+.our-clients{
+    padding: 36px 0;
+    background-color: #f9fafa;
+    border: 1px solid #eeeeee;
+    .client-logos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 22px;
+            img{
+                display: block;
+            }  
+        }
+    }
+    @extend %scroll-top;
+}
+
+@media screen and (max-width:768px) {
+    .our-clients{
+        padding: 16px 0;
+        .client-logos{
+            flex-direction: column;
+            li{
+                margin: 16px;
+            }
+        }
+    }
+}

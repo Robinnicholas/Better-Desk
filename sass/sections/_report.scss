@@ -1,7 +1,7 @@
 .report{
     @extend %scroll-top;
     padding: 40px 0;
-    background: linear-gradient(to right, #1172d0,#1d98d6);
+    background: linear-gradient(to right, $blue-color-bright-200,$blue-color-bright-100);
     .container{
         display: flex;
         justify-content: space-between;
@@ -10,7 +10,7 @@
             width: 60%;
             p{
                 font-size: 24px;
-                color: $text-color;
+                color: #ffffff;
                 font-weight: 400;
                 span{
                     font-size: 28px;
@@ -18,7 +18,7 @@
                 }
             }
             a{
-                color: $text-color;
+                color: #ffffff;
                 font-size: 16px;
                 display: inline-block;
                 margin-top: 20px ;

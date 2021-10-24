@@ -7,7 +7,7 @@
         h2{
             font-size: 32px;
             line-height: 44px;
-            color: #333333;
+            color: $brown-color-dark;
             margin-bottom: 39px;
             letter-spacing: 0.2px;
             font-weight: 400;
@@ -27,13 +27,13 @@
                 }
                 h3{
                     font-size: 16px;
-                    color: #333333;
+                    color: $brown-color-dark;
                     letter-spacing: 0.4px;
                     font-weight: 600;
                     margin: 14px 0 12px;
                 }
                 p{
-                    color: #72808e;
+                    color: $grey-color-medium;
                     line-height: 25px;
                     letter-spacing: 0.2px;
                     font-size: 16px;
@@ -46,15 +46,15 @@
             }
             .support{
                 @include circle();
-                background: linear-gradient(to bottom right,#3dbdb6,#0089ce);
+                background: linear-gradient(to bottom righ,$green-color-light,$blue-color-bright-300);
             }
             .help{
                 @include circle();
-                background: linear-gradient(to bottom right,#9facf8,#7a86cc);
+                background: linear-gradient(to bottom right,$grey-color-light,$blue-color-greyish);
             }
             .chat{
                 @include circle();
-                background: linear-gradient(to bottom,#f3778f,#f26a95,#f15a9d);
+                background: linear-gradient(to bottom,$pink-color-light,$pink-color-medium,$pink-color-bold);
             }
         }
     }

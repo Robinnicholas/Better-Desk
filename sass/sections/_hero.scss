@@ -10,7 +10,7 @@
         top:182px;
         h1{
             font-family: "ProximaNova";
-            color: $text-color;
+            color: #ffffff;
             font-size: 48px;
             letter-spacing: -2.12px;
             line-height: 54px;
@@ -66,11 +66,11 @@
                     align-items: center;
                     input{
                         width: 100%;
-                        border-radius: $border-radius;
+                        border-radius: 4px;
                     }
                     button{
                         margin-top: 25px;
-                        border-radius: $border-radius;
+                        border-radius: 4px;
                     }
                 }
             }

@@ -32,7 +32,7 @@
             content: "";
             display: block;
             position: absolute;
-            background-color: #081941;
+            background-color: $blue-color-dark;
             opacity: 50%;
             width: 100%;
             height: 100%;
@@ -68,11 +68,11 @@
            button{
                 @include circle();
                 border: none;
-                color: #3d3f6d;
+                color: $blue-color-medium;
                 width: 70px;
                 height:70px;
                 line-height: 70px;
-                background: linear-gradient(to right bottom, #3dbdb6,#0089ce);
+                background: linear-gradient(to right bottom, $green-color-light,$blue-color-bright-300);
                 i{
                     font-size: 25px;
                     vertical-align: middle;
@@ -141,13 +141,6 @@
                 @include circle();
                 width: 30px;
                 height:30px;
-                .triangle{
-                    width: 16px;
-                    height: 9px;
-                    border-top: 5px solid transparent;
-                    border-left: 10px solid #3d3f6d;
-                    border-bottom: 5px solid transparent;
-                }
             }
         }
     }

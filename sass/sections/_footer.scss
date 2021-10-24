@@ -1,14 +1,14 @@
 footer{
     @extend %scroll-top;
     padding: 35px 0;
-    background-color: #3e3e58;
+    background-color: $primary-color;
     text-align: center;
     p{
         padding: 0 20px;
         font-size: 12px;
         font-weight: 100;
         line-height: 24px;
-        color: #a5a8ad;
+        color: $grey-color-light-alpha-100;
         width: 75%;
         margin: 0 auto;
         span{

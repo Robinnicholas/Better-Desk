@@ -1,7 +1,7 @@
 .signup{
     @extend %scroll-top;
     padding: 80px 0;
-    background-color: #3dbdb6;
+    background-color: $green-color-light;
     text-align: center;
     h2{
         font-size: 40px;
@@ -22,7 +22,7 @@
             box-shadow: none;
             border: 1px solid #ffffff;
             background-color: #ffffff;
-            color: #3dbdb6;
+            color: $green-color-light;
         }
     }
 }
@@ -49,7 +49,7 @@
             box-shadow: none;
             border: 1px solid #ffffff;
             background-color: #ffffff;
-            color: #3dbdb6;
+            color: $green-color-light;
         }
     }
 }

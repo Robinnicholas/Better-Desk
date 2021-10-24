@@ -28,8 +28,8 @@ header{
             button{
                 margin-right: 0;
                 background-color: transparent;
-                border: 1px solid $btn-border-color;
-                border-radius: $border-radius;
+                border: 1px solid $grey-color-bright;
+                border-radius: 4px;
                 color: #ffffff;
                 font-weight: 400;
                 opacity: 0.5;
@@ -37,10 +37,10 @@ header{
                 cursor: pointer;
                 &:hover{
                     transition: .5s;
-                    color: $light-green;
-                    border-color: $light-green;
+                    color: $green-color-light;
+                    border-color: $green-color-light;
                     opacity: 1;
-                    box-shadow: 0 0 10px 1px $light-green;
+                    box-shadow: 0 0 10px 1px $green-color-light;
                 }
             }
             &.active::before{
@@ -48,7 +48,7 @@ header{
                 width: 72px;
                 height: 4px;
                 position: absolute;
-                border-bottom: 4px solid $light-green;
+                border-bottom: 4px solid $green-color-light;
                 bottom: -26px;
                 left: -50%;
             }
@@ -57,7 +57,7 @@ header{
             }
             a{
                 text-decoration: none;
-                color: $text-color;
+                color: #ffffff;
                 opacity: 0.5;
                 font-size: 14px;
                 font-weight: 400;
@@ -93,7 +93,7 @@ header{
             position: absolute;
             top: 0;
             right: 0;
-            background-color: $footer-color;
+            background-color: $blue-color-darker;
             height: 100vh;
             width: 320px;
             transform: translateX(100%);
@@ -144,7 +144,7 @@ header{
             div{
                 width: 25px;
                 height: 3px;
-                background-color: $text-color;
+                background-color: #ffffff;
                 margin: 5px;
             }
         }

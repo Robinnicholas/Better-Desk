@@ -1,7 +1,7 @@
 .report{
     @extend %scroll-top;
     padding: 40px 0;
-    background: linear-gradient(to right, $blue-color-bright-200,$blue-color-bright-100);
+    background: linear-gradient(to right, $color-blue-bright-200,$color-blue-bright-100);
     .container{
         display: flex;
         justify-content: space-between;

@@ -1,0 +1,28 @@
+footer{
+    @extend %scroll-top;
+    padding: 35px 0;
+    background-color: $primary-color;
+    text-align: center;
+    p{
+        padding: 0 20px;
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 24px;
+        color: $color-grey-light-alpha-100;
+        width: 75%;
+        margin: 0 auto;
+        span{
+            font-weight: 600;
+            color: #ffffff;
+        }
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    footer{
+        p{
+            width: 100%;
+        }
+    }
+}

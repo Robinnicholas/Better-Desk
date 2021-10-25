@@ -2,35 +2,17 @@
 @import './base/variables';
 @import './base/mixins';
 
-//  default 
- .container{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding:0 20px;
-}
+@import './component/header';
 
-// header
-@import './sections/header';
-// hero
 @import './sections/hero';
-// clients section 
 @import './sections/clients';
-// chat with us
 @import './sections/chat-with-us';
-// why we
 @import './sections/why-we';
-// about us
 @import './sections/about-us';
-// report
 @import './sections/report';
-//video
 @import './sections/video';
-// users
 @import './sections/users';
-// signup 
 @import './sections/signup';
-//footer-links
 @import './sections/footer-links';
-// footer
-@import './sections/footer';
 
+@import './component/footer';

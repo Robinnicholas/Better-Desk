@@ -16,11 +16,11 @@
 // mixins
 @mixin signup {
     input{        
-        background-color: $grey-color-light-alpha-100;        
+        background-color: $color-grey-light-alpha-100;        
         min-width: 302px;
         font-size: 16px;
         line-height: 20px;
-        box-shadow: 0 0 8px 0 $grey-color-light-alpha-100;
+        box-shadow: 0 0 8px 0 $color-grey-light-alpha-100;
         color: #ffffff;
         &::placeholder{
             color: #ffffff;
@@ -32,10 +32,10 @@
         }
     }
     button{   
-        background-color: $green-color-light;
+        background-color: $color-green-light;
         color: #ffffff;
         font-weight: 700;
-        box-shadow: 0 1px 6px 0 $purple-color-light;
+        box-shadow: 0 1px 6px 0 $color-purple-light;
     }
 }
 
@@ -50,10 +50,10 @@
 @mixin learMore {
     text-decoration: none;
     font-size: 14px;
-    color: $green-color-medium;
+    color: $color-green-medium;
     font-weight: 600;
     .arrow{
-        border: solid  $green-color-medium;
+        border: solid  $color-green-medium;
         border-width: 0 2px 2px 0;
         display: inline-block;
         padding: 2px;

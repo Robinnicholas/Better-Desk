@@ -17,3 +17,12 @@ function video(){
         },500)
     }
 }
+
+let tasks = document.querySelectorAll(".each-task");
+for(let i = 0; i < tasks.length; i++){
+    tasks[i].addEventListener("click", (e) => {
+        if(e){
+            tasks[i].classList.toggle("checked");
+        }
+    })
+}

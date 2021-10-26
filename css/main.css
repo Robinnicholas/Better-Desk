@@ -76,6 +76,10 @@ table {
   cursor: pointer;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
 .input-box {
   padding: 16px 20px;
   border: none;
@@ -520,7 +524,7 @@ header .burger {
   margin-bottom: 33px;
 }
 
-.why-we p {
+.why-we h2 + p {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0;
@@ -574,14 +578,143 @@ header .burger {
   line-height: 56px;
 }
 
-.why-we div.our-vision div {
-  width: auto;
-  height: auto;
+.why-we div.our-vision .to-do {
+  background-color: #ffffff;
+  width: 521px;
+  height: 461px;
+  overflow: auto;
 }
 
-.why-we div.our-vision div img {
-  width: 100%;
+.why-we div.our-vision .to-do .wrapper {
+  padding: 10px 20px;
+  background-color: #f3f3f3;
+  position: sticky;
+  top: 0;
+}
+
+.why-we div.our-vision .to-do .wrapper .to-do-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.why-we div.our-vision .to-do .wrapper .to-do-list p {
+  color: #4a4a4a;
+}
+
+.why-we div.our-vision .to-do .wrapper .to-do-list p span {
+  padding: 5px 15px;
+  background-color: #20bbef;
+  color: #ffffff;
+  border-radius: 16px;
+  margin-left: 10px;
+}
+
+.why-we div.our-vision .to-do .wrapper .to-do-list p + button {
+  background-color: #20bbef;
+  padding: 5px 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+}
+
+.why-we div.our-vision .to-do ul {
+  padding: 30px 20px;
+  overflow: auto;
+}
+
+.why-we div.our-vision .to-do ul .each-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.why-we div.our-vision .to-do ul .each-task:hover {
+  cursor: pointer;
+}
+
+.why-we div.our-vision .to-do ul .each-task:last-child {
+  margin-bottom: 0;
+}
+
+.why-we div.our-vision .to-do ul .each-task.checked .dot {
+  background-color: #606d78;
+  opacity: .6;
+}
+
+.why-we div.our-vision .to-do ul .each-task.checked .task {
+  opacity: .6;
+  text-decoration: line-through;
+  color: #606d78;
+}
+
+.why-we div.our-vision .to-do ul .each-task.checked .task .date {
+  color: #606d78;
+}
+
+.why-we div.our-vision .to-do ul .each-task.checked .task .task-to-do {
+  color: #606d78;
+}
+
+.why-we div.our-vision .to-do ul .each-task.checked label {
   display: block;
+  position: relative;
+}
+
+.why-we div.our-vision .to-do ul .each-task.checked label .checkmark {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 2px solid #dadfe5;
+}
+
+.why-we div.our-vision .to-do ul .each-task.checked label .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 9px;
+  width: 5px;
+  height: 10px;
+  border: solid #dadfe5;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.why-we div.our-vision .to-do ul .each-task .wrapper-check {
+  display: flex;
+}
+
+.why-we div.our-vision .to-do ul .each-task .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #6cdbd5;
+}
+
+.why-we div.our-vision .to-do ul .each-task .task {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.why-we div.our-vision .to-do ul .each-task .task .date {
+  color: #54657e;
+  margin-bottom: 10px;
+}
+
+.why-we div.our-vision .to-do ul .each-task .task .task-to-do {
+  color: #606d78;
+}
+
+.why-we div.our-vision .to-do ul .each-task label .checkmark {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 3px solid #6cdbd5;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 992px) {
@@ -603,7 +736,6 @@ header .burger {
   }
   .why-we p {
     font-size: 16px;
-    margin-bottom: 45px;
   }
   .why-we div.our-vision div.details {
     width: 75%;
@@ -621,6 +753,9 @@ header .burger {
   .why-we div.our-vision div.details:first-child .our-achievements li {
     font-size: 16px;
     line-height: 36px;
+  }
+  .why-we .to-do .dot {
+    display: none;
   }
 }
 
@@ -1274,10 +1409,6 @@ footer p span {
 
 @media screen and (max-width: 992px) {
   footer p {
-    width: 100%;
-  }
-}
-r p {
     width: 100%;
   }
 }

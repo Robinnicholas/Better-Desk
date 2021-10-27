@@ -781,6 +781,9 @@ header .burger {
     font-size: 16px;
     line-height: 36px;
   }
+  .why-we .to-do .line {
+    display: none;
+  }
   .why-we .to-do .dot {
     display: none;
   }

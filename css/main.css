@@ -1143,6 +1143,7 @@ header .burger {
 .users .user-details li {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .users .user-details li figure {

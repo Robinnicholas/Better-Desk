@@ -587,9 +587,10 @@ header .burger {
 
 .why-we div.our-vision .to-do .wrapper {
   padding: 10px 20px;
-  background-color: #f3f3f3;
+  background-color: #f5f9fc;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .why-we div.our-vision .to-do .wrapper .to-do-list {
@@ -627,7 +628,6 @@ header .burger {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 35px;
 }
 
 .why-we div.our-vision .to-do ul .each-task:hover {
@@ -636,6 +636,26 @@ header .burger {
 
 .why-we div.our-vision .to-do ul .each-task:last-child {
   margin-bottom: 0;
+}
+
+.why-we div.our-vision .to-do ul .each-task:last-child .line {
+  display: none;
+}
+
+.why-we div.our-vision .to-do ul .each-task:nth-of-type(2n) .dot {
+  background-color: #f5474a;
+}
+
+.why-we div.our-vision .to-do ul .each-task:nth-of-type(2n + 1) .dot {
+  background-color: #f38428;
+}
+
+.why-we div.our-vision .to-do ul .each-task:first-child .dot {
+  background-color: #6cdbd5;
+}
+
+.why-we div.our-vision .to-do ul .each-task.checked .line {
+  visibility: hidden;
 }
 
 .why-we div.our-vision .to-do ul .each-task.checked .dot {
@@ -687,11 +707,18 @@ header .burger {
   display: flex;
 }
 
+.why-we div.our-vision .to-do ul .each-task .line {
+  width: 1px;
+  background-color: #f38428;
+  transform: translate(8px, 15px);
+  height: 75px;
+}
+
 .why-we div.our-vision .to-do ul .each-task .dot {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #6cdbd5;
+  z-index: 1;
 }
 
 .why-we div.our-vision .to-do ul .each-task .task {

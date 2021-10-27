@@ -60,9 +60,10 @@
             overflow: auto;
             .wrapper{
                 padding: 10px 20px;
-                background-color: #f3f3f3;
+                background-color: #f5f9fc;
                 position: sticky;
                 top: 0;
+                z-index: 2;
                 .to-do-list{
                     display: flex;
                     justify-content: space-between;
@@ -93,14 +94,34 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    margin-bottom: 35px;
                     &:hover{
                         cursor: pointer;
                     }
                     &:last-child{
                         margin-bottom: 0;
+                        .line{
+                            display: none;
+                        }
+                    }
+                    &:nth-of-type(2n){
+                        .dot{
+                            background-color: #f5474a;
+                        }
+                    }
+                    &:nth-of-type(2n + 1){
+                        .dot{
+                            background-color: #f38428;
+                        }
+                    }
+                    &:first-child{
+                        .dot{
+                            background-color: #6cdbd5;
+                        }
                     }
                     &.checked{
+                        .line{
+                            visibility: hidden;
+                        }
                         .dot{
                             background-color:#606d78;
                             opacity: .6;
@@ -145,12 +166,17 @@
                     .wrapper-check{
                         display: flex;
                     }
+                    .line{
+                        width: 1px;
+                        background-color: #f38428;
+                        transform: translate(8px,15px);
+                        height: 75px;
+                    }
                     .dot{
                         width: 15px;
                         height: 15px;
                         border-radius: 50%;
-                        background-color: #6cdbd5;
-                        
+                        z-index: 1;
                     }
                     .task{
                         text-align: left;

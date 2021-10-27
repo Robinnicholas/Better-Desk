@@ -317,9 +317,7 @@
                     <i class="fas fa-pause"></i>
                 </button>
             </div>
-            <video onclick="video()" poster="images/video.jpg" loop>
-                <source src="images/infinity-war.mp4" type="video/mp4">
-            </video>
+            <video onclick="video()" src="./images/infinity-war.mp4" poster="images/video.jpg" loop></video>
         </a>
     </section>
 
@@ -335,6 +333,15 @@
                             width="80"
                             height="80"        
                             alt="User 1" 
+                        />
+                        <img src="images/triangle.png" 
+                            srcset="images/triangle.png 1x,
+                                    images/triangle@2x.png 2x,
+                                    images/triangle@3x.png 3x"
+                            width="21"
+                            height="20"        
+                            class="play hide" 
+                            alt="Play" 
                         />
                     </figure>
                     <div class="user-wrapper">

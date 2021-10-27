@@ -1156,6 +1156,10 @@ header .burger {
   transform: translate(-50%, -50%);
 }
 
+.users .user-details li img.play.hide {
+  visibility: hidden;
+}
+
 .users .user-details li .user-wrapper {
   margin-left: 20px;
 }

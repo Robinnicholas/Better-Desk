@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap");
 @font-face {
   font-family: ProximaNova;
-  src: url("../../font/ProximaNovaRegular.woff");
+  src: url("../../font/ProximaNovaRegular.woff") format("woff");
 }
 
 /* css reset */

@@ -47,14 +47,26 @@
             .support{
                 @include circle();
                 background: linear-gradient(to bottom right,$color-green-light,$color-blue-bright-300);
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0 0 5px 0 $color-green-light;
+                }
             }
             .help{
                 @include circle();
                 background: linear-gradient(to bottom right,$color-grey-light,$color-blue-greyish);
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0 0 5px 0 $color-grey-light;
+                }
             }
             .chat{
                 @include circle();
                 background: linear-gradient(to bottom,$color-pink-light,$color-pink-medium,$color-pink-bold);
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0 0 5px 0 $color-pink-light;
+                }
             }
         }
     }

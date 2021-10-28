@@ -19,39 +19,57 @@ function video(){
     }
 }
 
-let tasks = document.querySelectorAll(".each-task");
-for(let i = 0; i < tasks.length; i++){
-    tasks[i].addEventListener("click", (e) => {
-        if(e){
-            tasks[i].classList.toggle("checked");
-        }
-    })
+function task(){
+    let tasks = document.querySelectorAll(".each-task");
+    tasks.forEach((e) => {
+        e.addEventListener("click", () => {
+            e.classList.toggle("checked");
+        });
+    });
 }
 
+function changeVideo(){
+    let users = document.querySelectorAll(".user-details li");
+    for(let i = 0; i< users.length; i++){
+        users[i].addEventListener("click",(e)=>{        
+            users[i].classList.add("active")
+            let allElements = [...users];
+            let otherElements =  allElements.filter((e) => {
+                return e !== users[i];
+            })
 
-let users = document.querySelectorAll(".user-details li");
-let usersPlay = document.querySelectorAll("img.play");
-for(let i = 0; i< users.length; i++){
-    users[i].addEventListener("click",(e)=>{        
-        let videoSection = document.querySelector(".playing");
-        if(videoSection){
-            videoSection.classList.replace("playing", "paused"); 
-        }
-        let videoSrc = document.querySelector("video");
-        switch(i){
-            case 0 : 
-                videoSrc.setAttribute("src", "./images/infinity-war.mp4");
-                usersPlay[i].classList.add("hide")
-                break;
-            case 1 : 
-                videoSrc.setAttribute("src", "./images/music.mp4");
-                break;
-            case 2 : 
-                videoSrc.setAttribute("src", "./images/fireworks.mp4");
-                break;
-            case 3 :
-                videoSrc.setAttribute("src", "./images/spiderman.mp4");
-                break;
-        }
-    })
+            let blurUser = otherElements.map((e)=>{
+                return e.classList.remove("active");
+            })
+
+            let videoSection = document.querySelector(".playing");
+            if(videoSection){
+                videoSection.classList.replace("playing", "paused"); 
+            }
+            let videoSrc = document.querySelector("video");
+            switch(i){
+                case 0 : 
+                    videoSrc.setAttribute("poster", "./images/video.jpg");
+                    videoSrc.setAttribute("src", "./images/infinity-war.mp4");
+                    break;
+                case 1 : 
+                    videoSrc.setAttribute("poster", "./images/bird.jpg");
+                    videoSrc.setAttribute("src", "./images/music.mp4");
+                    break;
+                case 2 : 
+                    videoSrc.setAttribute("poster", "./images/image-2.jpg");
+                    videoSrc.setAttribute("src", "./images/fireworks.mp4");
+                    break;
+                case 3 :
+                    videoSrc.setAttribute("poster", "./images/game.jpg");
+                    videoSrc.setAttribute("src", "./images/spiderman.mp4");
+                    break;
+            }
+        })
+    }
 }
+
+window.addEventListener('load', () => {
+    task();
+    changeVideo();
+})

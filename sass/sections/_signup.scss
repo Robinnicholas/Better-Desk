@@ -17,12 +17,18 @@
         input{
             background-color: transparent;
             border: 1px solid #ffffff;
+            &:hover{
+                box-shadow: 0 0 8px 0 #ffffff;
+            }
         }
         button{
             box-shadow: none;
             border: 1px solid #ffffff;
             background-color: #ffffff;
             color: $color-green-light;
+            &:hover{
+                box-shadow: 0 0 8px 0 #ffffff;
+            }
         }
     }
 }

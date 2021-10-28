@@ -22,8 +22,10 @@
         min-width: 302px;
         font-size: 16px;
         line-height: 20px;
-        box-shadow: 0 0 8px 0 $color-grey-light-alpha-100;
         color: #ffffff;
+        &:hover{
+            box-shadow: 0 0 8px 0 $color-grey-light-alpha-100;
+        }
         &::placeholder{
             color: #ffffff;
             font-size: 16px;
@@ -37,7 +39,9 @@
         background-color: $color-green-light;
         color: #ffffff;
         font-weight: 700;
-        box-shadow: 0 1px 6px 0 $color-purple-light;
+        &:hover{
+            box-shadow: 0 0 8px 0 $color-purple-light;
+        }
     }
 }
 
@@ -62,6 +66,9 @@
         margin-left: 6px;
         transform: rotate(-45deg);
         vertical-align: middle;
+    }
+    &:hover{
+        text-shadow: 0 0 1px $color-green-medium;
     }
 }
 

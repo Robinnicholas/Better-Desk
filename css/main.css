@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap");
 @font-face {
   font-family: ProximaNova;
-  src: url("../../font/Proxima-Nova-Font.otf");
+  src: url("../../font/ProximaNovaRegular.woff");
 }
 
 /* css reset */
@@ -278,8 +278,11 @@ header .burger {
   min-width: 302px;
   font-size: 16px;
   line-height: 20px;
-  box-shadow: 0 0 8px 0 rgba(176, 176, 176, 0.5);
   color: #ffffff;
+}
+
+.hero .container .hero-content input:hover {
+  box-shadow: 0 0 8px 0 rgba(176, 176, 176, 0.5);
 }
 
 .hero .container .hero-content input::placeholder {
@@ -296,7 +299,10 @@ header .burger {
   background-color: #3dbdb6;
   color: #ffffff;
   font-weight: 700;
-  box-shadow: 0 1px 6px 0 #4449a2;
+}
+
+.hero .container .hero-content button:hover {
+  box-shadow: 0 0 8px 0 #4449a2;
 }
 
 .hero .hero-img {
@@ -455,6 +461,10 @@ header .burger {
   vertical-align: middle;
 }
 
+.Chat-with-us .container .chat-services li a:hover {
+  text-shadow: 0 0 1px #2d8cff;
+}
+
 .Chat-with-us .container .chat-services .support {
   width: 99px;
   height: 99px;
@@ -462,6 +472,11 @@ header .burger {
   margin: 0 auto;
   line-height: 99px;
   background: linear-gradient(to bottom right, #3dbdb6, #0089ce);
+}
+
+.Chat-with-us .container .chat-services .support:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #3dbdb6;
 }
 
 .Chat-with-us .container .chat-services .help {
@@ -473,6 +488,11 @@ header .burger {
   background: linear-gradient(to bottom right, #9facf8, #7a86cc);
 }
 
+.Chat-with-us .container .chat-services .help:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #9facf8;
+}
+
 .Chat-with-us .container .chat-services .chat {
   width: 99px;
   height: 99px;
@@ -480,6 +500,11 @@ header .burger {
   margin: 0 auto;
   line-height: 99px;
   background: linear-gradient(to bottom, #f3778f, #f26a95, #f15a9d);
+}
+
+.Chat-with-us .container .chat-services .chat:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #f3778f;
 }
 
 @media screen and (max-width: 992px) {
@@ -837,6 +862,10 @@ header .burger {
   vertical-align: middle;
 }
 
+.about ul.about-links li a.learn-more:hover {
+  text-shadow: 0 0 1px #2d8cff;
+}
+
 .about ul.about-links li p {
   font-size: 18px;
   color: #39394d;
@@ -1146,8 +1175,26 @@ header .burger {
   cursor: pointer;
 }
 
+.users .user-details li.active figure::before {
+  content: none;
+}
+
+.users .user-details li.active img.play {
+  visibility: hidden;
+}
+
 .users .user-details li figure {
   position: relative;
+}
+
+.users .user-details li figure::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee8c;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
 }
 
 .users .user-details li img.play {
@@ -1155,10 +1202,6 @@ header .burger {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-.users .user-details li img.play.hide {
-  visibility: hidden;
 }
 
 .users .user-details li .user-wrapper {
@@ -1214,8 +1257,11 @@ header .burger {
   min-width: 302px;
   font-size: 16px;
   line-height: 20px;
-  box-shadow: 0 0 8px 0 rgba(176, 176, 176, 0.5);
   color: #ffffff;
+}
+
+.signup form input:hover {
+  box-shadow: 0 0 8px 0 rgba(176, 176, 176, 0.5);
 }
 
 .signup form input::placeholder {
@@ -1232,7 +1278,10 @@ header .burger {
   background-color: #3dbdb6;
   color: #ffffff;
   font-weight: 700;
-  box-shadow: 0 1px 6px 0 #4449a2;
+}
+
+.signup form button:hover {
+  box-shadow: 0 0 8px 0 #4449a2;
 }
 
 .signup form input {
@@ -1240,11 +1289,19 @@ header .burger {
   border: 1px solid #ffffff;
 }
 
+.signup form input:hover {
+  box-shadow: 0 0 8px 0 #ffffff;
+}
+
 .signup form button {
   box-shadow: none;
   border: 1px solid #ffffff;
   background-color: #ffffff;
   color: #3dbdb6;
+}
+
+.signup form button:hover {
+  box-shadow: 0 0 8px 0 #ffffff;
 }
 
 @media screen and (max-width: 576px) {
@@ -1264,8 +1321,10 @@ header .burger {
     min-width: 302px;
     font-size: 16px;
     line-height: 20px;
-    box-shadow: 0 0 8px 0 rgba(176, 176, 176, 0.5);
     color: #ffffff;
+  }
+  .signup input:hover {
+    box-shadow: 0 0 8px 0 rgba(176, 176, 176, 0.5);
   }
   .signup input::placeholder {
     color: #ffffff;
@@ -1279,7 +1338,9 @@ header .burger {
     background-color: #3dbdb6;
     color: #ffffff;
     font-weight: 700;
-    box-shadow: 0 1px 6px 0 #4449a2;
+  }
+  .signup button:hover {
+    box-shadow: 0 0 8px 0 #4449a2;
   }
   .signup input {
     width: 100%;
@@ -1351,9 +1412,13 @@ header .burger {
   display: block;
   margin: 16px 0;
   color: #ffffff;
-  opacity: 60%;
+  opacity: .6;
   font-size: 12px;
   line-height: 19px;
+}
+
+.footer div.footer-wrapper .col-left .footer-nav li ul li a:hover {
+  opacity: 1;
 }
 
 .footer div.footer-wrapper div.col-right ul {
@@ -1367,6 +1432,11 @@ header .burger {
 .footer div.footer-wrapper div.col-right ul li i {
   color: #ffffff;
   opacity: .6;
+}
+
+.footer div.footer-wrapper div.col-right ul li i:hover {
+  opacity: 1;
+  text-shadow: 0 0 10px #3bddb6;
 }
 
 @media screen and (max-width: 768px) {

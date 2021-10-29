@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap");
 @font-face {
   font-family: ProximaNova;
-  src: url("../../font/ProximaNovaRegular.woff") format("woff");
+  src: url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff") format("woff"), url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.svg#ProximaNova-Regular") format("svg");
 }
 
 /* css reset */

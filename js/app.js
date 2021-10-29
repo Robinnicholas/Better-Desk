@@ -34,12 +34,12 @@ function changeVideo(){
         users[i].addEventListener("click",(e)=>{        
             users[i].classList.add("active")
             let allElements = [...users];
-            let otherElements =  allElements.filter((e) => {
-                return e !== users[i];
+            let otherElements =  allElements.filter((eachElement) => {
+                return eachElement !== users[i];
             })
 
-            let blurUser = otherElements.map((e)=>{
-                return e.classList.remove("active");
+            otherElements.map((eachElement)=>{
+                return eachElement.classList.remove("active");
             })
 
             let videoSection = document.querySelector(".playing");

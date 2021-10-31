@@ -1,0 +1,52 @@
+%scroll-top{
+    position: relative;
+    z-index: 2;
+}
+
+%learnmore{
+    text-decoration: none;
+    font-size: 14px;
+    color: $color-green-medium;
+    font-weight: 600;
+    .arrow{
+        border: solid  $color-green-medium;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 2px;
+        margin-left: 6px;
+        transform: rotate(-45deg);
+        vertical-align: middle;
+    }
+    &:hover{
+        text-shadow: 0 0 1px $color-green-medium;
+    }
+}
+
+%signup {
+    input{        
+        background-color: $color-grey-light-alpha-100;        
+        min-width: 302px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+        &:hover{
+            box-shadow: 0 0 8px 0 $color-grey-light-alpha-100;
+        }
+        &::placeholder{
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    button{   
+        background-color: $color-green-light;
+        color: #ffffff;
+        font-weight: 700;
+        &:hover{
+            box-shadow: 0 0 8px 0 $color-purple-light;
+        }
+    }
+}

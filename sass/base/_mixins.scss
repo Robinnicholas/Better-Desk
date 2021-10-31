@@ -1,78 +1,13 @@
-.btn{
-    padding: 16px 8px;
-    min-width:120px;
-    border: none;
-    font-weight: 700;
-    font-size: 14px;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-}
-.text-bold{
-    font-weight: 700;
-}
-.input-box{
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px 0 0 4px ;
-}
 // mixins
-@mixin signup {
-    input{        
-        background-color: $color-grey-light-alpha-100;        
-        min-width: 302px;
-        font-size: 16px;
-        line-height: 20px;
-        color: #ffffff;
-        &:hover{
-            box-shadow: 0 0 8px 0 $color-grey-light-alpha-100;
-        }
-        &::placeholder{
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 400;
-        }
-        &:focus{
-            outline: none;
-        }
-    }
-    button{   
-        background-color: $color-green-light;
-        color: #ffffff;
-        font-weight: 700;
-        &:hover{
-            box-shadow: 0 0 8px 0 $color-purple-light;
-        }
-    }
-}
-
-@mixin circle {
-    width: 99px;
-    height: 99px;
+@mixin circle($direction,$st-color,$ed-color) {
+    background:linear-gradient($direction,$st-color,$ed-color);
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin: 0 auto;
-    line-height: 99px;
-}
-
-@mixin learMore {
-    text-decoration: none;
-    font-size: 14px;
-    color: $color-green-medium;
-    font-weight: 600;
-    .arrow{
-        border: solid  $color-green-medium;
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        padding: 2px;
-        margin-left: 6px;
-        transform: rotate(-45deg);
-        vertical-align: middle;
-    }
+    line-height: 100px;
     &:hover{
-        text-shadow: 0 0 1px $color-green-medium;
+        cursor: pointer;
+        box-shadow: 0 0 5px 0 $st-color;
     }
-}
-
-%scroll-top{
-    position: relative;
-    z-index: 2;
 }

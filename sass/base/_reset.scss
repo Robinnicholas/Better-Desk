@@ -1,15 +1,7 @@
 @font-face {
     font-family: ProximaNova;
-	src: url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot?#iefix") 
-		format("embedded-opentype"),
-	url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2") 
+	src: url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2") 
 		format("woff2"),
-	url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff") 
-		format("woff"),
-	url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.ttf") 
-		format("truetype"),
-	url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.svg#ProximaNova-Regular") 
-		format("svg");
 }
 /* css reset */
 html, body, div, span, applet, object, iframe,
@@ -57,10 +49,5 @@ table {
 }
 *{
     box-sizing: border-box;
-}
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding:0 20px;
 }
  /* css reset end  */

@@ -16,10 +16,10 @@
             width: 100%;
         }
     }
-    div.our-vision{
+    .our-vision{
         display: flex;
         justify-content: space-between;
-        div.details{
+        .details{
             width: 46%;
             &:first-child{
                     padding: 46px 0;
@@ -208,10 +208,10 @@
 
 @media screen and (max-width:992px) {
     .why-we{
-        div.our-vision{
+        .our-vision{
             flex-wrap: wrap-reverse;
             justify-content: center;
-            div.details{
+            .details{
                 &:first-child{
                     margin-right: 0;
                 }
@@ -227,8 +227,8 @@
         p{
             font-size: 16px;
         }
-        div.our-vision{
-            div.details{
+        .our-vision{
+            .details{
                 width: 75%;
             }
         }
@@ -237,8 +237,8 @@
 
 @media screen and (max-width:576px) {
     .why-we{
-        div.our-vision{
-            div.details{
+        .our-vision{
+            .details{
                 width: 100%;
                 &:first-child{
                     .glass-bg{
@@ -257,6 +257,9 @@
             }
         }
         .to-do{
+            .each-task{
+                margin-bottom: 25px;
+            }
             .line{
                 display: none;
             }

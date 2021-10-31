@@ -21,7 +21,7 @@
                 margin-top: 47px;
                 display: flex;
             }
-            @include signup();
+            @extend %signup;
         }
     }
     .hero-img{

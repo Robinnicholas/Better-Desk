@@ -23,7 +23,7 @@
                 object-fit: contain
             }
             a.learn-more{
-                @include learMore();   
+                @extend %learnmore;
             }
             p{
                 font-size: 18px;

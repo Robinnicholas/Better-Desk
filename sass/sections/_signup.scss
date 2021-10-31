@@ -13,7 +13,7 @@
     form{
         display: flex;
         justify-content: center;
-        @include signup();
+        @extend %signup;
         input{
             background-color: transparent;
             border: 1px solid #ffffff;
@@ -44,7 +44,6 @@
             flex-direction: column;
             align-items: center;
         }
-        @include signup();
         input{
             width: 100%;
             background-color: transparent;

@@ -54,24 +54,26 @@
             }
         }
         .to-do{
+            *{
+                font-family: 'Open Sans', sans-serif !important;
+            }
             background-color: #ffffff;
             width: 521px;
             height: 461px;
-            overflow: auto;
-            .wrapper{
-                padding: 10px 20px;
-                background-color: #f5f9fc;
-                position: sticky;
-                top: 0;
-                z-index: 2;
                 .to-do-list{
+                    padding: 19px 40px;
+                    background-color: #f5f9fc;
+                    position: sticky;
+                    top: 0;
+                    z-index: 2;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     p{
                         color: #4a4a4a;
+                        font-size: 20px;
                         span{
-                            padding: 5px 15px;
+                            padding: 0 18px;
                             background-color:#20bbef;
                             color:#ffffff;
                             border-radius: 16px;
@@ -79,21 +81,21 @@
                         }
                         + button{
                             background-color: #20bbef;
-                            padding: 5px 10px;
+                            padding: 4px 14px;
+                            font-size: 18px;
                             color: #ffffff;
                             border: none;
                             border-radius: 4px;
                         }
                     }
                 }
-            }
             ul{
-                padding: 30px 20px;
+                padding: 30px 40px;
+                height: 85%;
                 overflow: auto;
                 .each-task{
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;
                     &:hover{
                         cursor: pointer;
                     }
@@ -120,44 +122,40 @@
                     }
                     &.checked{
                         .line{
-                            visibility: hidden;
+                            background-color:#dadadb;
                         }
                         .dot{
-                            background-color:#606d78;
-                            opacity: .6;
+                            background-color:#dadadb;
                         }
                         .task{
-                            opacity: .6;
                             text-decoration: line-through;
-                            color: #606d78;
+                            color: #dadadb;
                             .date{
-                                color: #606d78;
+                                color: #dadadb;
                             }
                             .task-to-do{
-                                color: #606d78;
+                                color: #dadadb;
                             }
                         }
-                        label{
+                        .check-circle{
                             display: block;
                             position: relative;
                             .checkmark{
                                 top: 0;
                                 left: 0;
-                                height: 25px;
-                                width: 25px; 
+                                height: 32px;
+                                width: 32px; 
                                 background-color: transparent;
                                 border: 2px solid #dadfe5;
                                 &::after{
                                     content: "";
                                     position: absolute;
-                                    top: 4px;
+                                    top: 3px;
                                     left: 9px;
-                                    width: 5px;
-                                    height: 10px;
+                                    width: 10px;
+                                    height: 16px;
                                     border: solid #dadfe5;
                                     border-width: 0 3px 3px 0;
-                                    -webkit-transform: rotate(45deg);
-                                    -ms-transform: rotate(45deg);
                                     transform: rotate(45deg);
                                 }
                             }
@@ -182,18 +180,18 @@
                         text-align: left;
                         margin-left: 25px;
                         .date{
-                            color: #54657e;
+                            color: #606d78;
                             margin-bottom: 10px;
                         }
                         .task-to-do{
                             color: #606d78;
                         }
                     }
-                    label{
+                    .check-circle{
                         .checkmark{
                             display: block;
-                            width: 25px;
-                            height: 25px;
+                            width: 32px;
+                            height: 32px;
                             background: transparent;
                             border: 3px solid #6cdbd5;
                             border-radius: 50%;  
@@ -255,16 +253,34 @@
                     }
                 }
             }
-        }
-        .to-do{
-            .each-task{
-                margin-bottom: 25px;
-            }
-            .line{
-                display: none;
-            }
-            .dot{
-                display: none;
+            .to-do{
+                .to-do-list{
+                    padding: 15px 20px;
+                    p{
+                        font-size: 18px;
+                        + button{
+                           font-size: 14px; 
+                        }
+                    }
+                }
+                ul{
+                    padding:15px 20px ;
+                }
+                .each-task{
+                    margin-bottom: 25px;
+                    .task{
+                        margin-left: 0 !important;
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .line{
+                    display: none;
+                }
+                .dot{
+                    display: none;
+                }
             }
         }
     }

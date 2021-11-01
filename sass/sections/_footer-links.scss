@@ -58,13 +58,14 @@
             ul{
                 display: flex;
                 li{
-                    margin-left:12px;
+                    margin: 0 6px;
                     i{
                         color: #ffffff;
                         opacity: .6;
                         &:hover{
                             opacity: 1;
                             text-shadow: 0 0 10px #3bddb6;
+                            font-size: 18px;
                         }
                     }
                 }

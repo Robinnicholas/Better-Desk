@@ -13,21 +13,35 @@
            }
        }
        .video-text-wrapper{
-           display: none;
+           .wrapper{
+               display: none;
+            }
        }
        
-    }
-    &.pausing{
-        .fa-play{
-            display: none;
+       .fa-play{
+           display: none;
         }
         .fa-pause{
             display: block;
         }
     }
+    &.paused{
+        .video-text-wrapper{
+            .wrapper{
+                display: none;
+             }
+        }
+        .fa-play{
+            display: block;
+        }
+        .fa-pause{
+             display: none;
+         }
+    }
     position: relative;
     text-align: center;
     a{
+        display: inline-block;
         &::before{
             content: "";
             display: block;
@@ -46,6 +60,7 @@
             .wrapper{
                 width: 60%;
                 margin: 0 auto;
+                
                 q{
                     color: #ffffff;
                     margin: 0 auto;

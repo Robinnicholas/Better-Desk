@@ -8,6 +8,8 @@
     font-size: 14px;
     color: $color-green-medium;
     font-weight: 600;
+    position: relative;
+    display: inline-block;
     .arrow{
         border: solid  $color-green-medium;
         border-width: 0 2px 2px 0;
@@ -16,9 +18,29 @@
         margin-left: 6px;
         transform: rotate(-45deg);
         vertical-align: middle;
+        transition: 0.25s;   
     }
     &:hover{
-        text-shadow: 0 0 1px $color-green-medium;
+        .arrow{
+            transition: 0.25s;   
+            margin-left: 15px;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: $color-green-medium;
+        transform-origin: bottom left;
+        transition: transform 0.50s ease-out;   
+    }
+    &:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 }
 
@@ -30,7 +52,7 @@
         line-height: 20px;
         color: #ffffff;
         &:hover{
-            box-shadow: 0 0 8px 0 $color-grey-light-alpha-100;
+            cursor: pointer;
         }
         &::placeholder{
             color: #ffffff;
@@ -39,6 +61,7 @@
         }
         &:focus{
             outline: none;
+            box-shadow: 0 0 8px 0 $color-grey-light-alpha-100;
         }
     }
     button{   
@@ -46,7 +69,7 @@
         color: #ffffff;
         font-weight: 700;
         &:hover{
-            box-shadow: 0 0 8px 0 $color-purple-light;
+            box-shadow: 0 0 8px 0 $color-green-light;
         }
     }
 }

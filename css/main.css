@@ -66,30 +66,6 @@ table {
   padding: 0 20px;
 }
 
-.orangered {
-  background-color: #f5474a;
-}
-
-.orange {
-  background-color: #f38428;
-}
-
-.yellow {
-  background-color: #e48365;
-}
-
-.skyblue {
-  background-color: #6cdbd5;
-}
-
-.lime {
-  background-color: #e9e768;
-}
-
-.brown {
-  background-color: brown;
-}
-
 .btn {
   padding: 16px 8px;
   min-width: 120px;
@@ -108,6 +84,34 @@ table {
   padding: 16px 20px;
   border: none;
   border-radius: 4px 0 0 4px;
+}
+
+.red {
+  background-color: red;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.orangered {
+  background-color: #f5474a;
+}
+
+.orangeyellow {
+  background-color: #f38428;
+}
+
+.orangebrown {
+  background-color: #e48365;
+}
+
+.skyblue {
+  background-color: #6cdbd5;
+}
+
+.limeyellow {
+  background-color: #e9e768;
 }
 
 .our-clients, .Chat-with-us, .why-we, .about, .report, .video, .users, .signup, .footer, footer {
@@ -143,7 +147,7 @@ table {
 .Chat-with-us .container .chat-services li a::after, .about ul.about-links li a.learn-more::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 85%;
   transform: scaleX(0);
   height: 2px;
   bottom: -5px;
@@ -653,18 +657,22 @@ header .burger {
   align-items: center;
 }
 
-.why-we .our-vision .to-do .to-do-list p {
+.why-we .our-vision .to-do .to-do-list .wrapper p {
   color: #4a4a4a;
   font-size: 20px;
   display: inline-block;
+  line-height: 25px;
+  vertical-align: middle;
 }
 
-.why-we .our-vision .to-do .to-do-list span {
+.why-we .our-vision .to-do .to-do-list .wrapper span {
   padding: 2px 16px;
   background-color: #20bbef;
   color: #ffffff;
   border-radius: 16px;
   margin-left: 10px;
+  line-height: 25px;
+  vertical-align: middle;
 }
 
 .why-we .our-vision .to-do .to-do-list button {
@@ -1067,6 +1075,10 @@ header .burger {
   display: block;
 }
 
+.video.paused a::before {
+  content: none;
+}
+
 .video.paused .video-text-wrapper .wrapper {
   display: none;
 }
@@ -1143,8 +1155,7 @@ header .burger {
 
 .video video {
   width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
+  height: calc(100vh - 78px);
   object-fit: cover;
 }
 

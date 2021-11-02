@@ -66,17 +66,23 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    p{
-                        color: #4a4a4a;
-                        font-size: 20px;
-                        display: inline-block;  
-                    }
-                    span{
-                        padding: 2px 16px;
-                        background-color:#20bbef;
-                        color:#ffffff;
-                        border-radius: 16px;
-                        margin-left: 10px;
+                    .wrapper{
+                        p{
+                            color: #4a4a4a;
+                            font-size: 20px;
+                            display: inline-block;  
+                            line-height: 25px;
+                            vertical-align: middle;
+                        }
+                        span{
+                            padding: 2px 16px;
+                            background-color:#20bbef;
+                            color:#ffffff;
+                            border-radius: 16px;
+                            margin-left: 10px;
+                            line-height: 25px;
+                            vertical-align: middle;
+                        }
                     }
                     button{
                         background-color: #20bbef;

@@ -10,9 +10,6 @@ function video(){
     // play video
     videoTag.addEventListener('click', () => {
         videoSection.classList.replace("ready", "playing"); 
-        videoTag.onended = function(){
-            videoSection.classList.replace("playing", "ready"); 
-        }
         if(videoTag.paused){
             videoTag.play();
             videoSection.classList.replace("paused", "playing"); 
@@ -22,22 +19,26 @@ function video(){
         }
     })
 
+    videoTag.addEventListener('ended', ()=>{
+        videoSection.classList.replace("playing", "ready"); 
+    })
+
     // change video
     let users = document.querySelectorAll(".user-details li");
-    users.forEach((eachUser, i) =>{
-        eachUser.addEventListener("click",(e)=>{
-            let videoPoster = eachUser.getAttribute('data-poster');
-            let videoSrc = eachUser.getAttribute('data-src');
+    users.forEach(user =>{
+        user.addEventListener("click",(e)=>{
+            let videoPoster = user.getAttribute('data-poster');
+            let videoSrc = user.getAttribute('data-src');
             videoTag.setAttribute("poster", videoPoster);
             videoTag.setAttribute("src", videoSrc);  
             videoSection.classList.replace("playing" , "ready");
             videoSection.classList.replace("paused" , "ready");
-            eachUser.classList.add("active")
+            user.classList.add("active")
             let allElements = [...users];
             let otherElements =  allElements.filter((eachElement) => {
-                return eachElement !== eachUser;
+                return eachElement !== user;
             })
-
+            
             otherElements.map((eachElement)=>{
                 return eachElement.classList.remove("active");
             })
@@ -47,14 +48,22 @@ function video(){
 
 function task(){
     let tasks = document.querySelectorAll(".each-task");
-    tasks.forEach((e) => {
-        e.addEventListener("click", () => {
-            e.classList.toggle("checked");
+    let dots = document.querySelectorAll('.each-task i.dot');
+    let lines = document.querySelectorAll('.each-task i.line');
+    tasks.forEach((eachTask, i) => {
+        eachTask.addEventListener("click", () => {
+            eachTask.classList.toggle("checked");
         });
+        let colors = ['orangered','orangeyellow','orangebrown','skyblue','limeyellow','brown','red'];
+        let color = Math.floor(Math.random() * colors.length);
+        dots[i].classList.add(colors[color]);
+        lines[i].classList.add(colors[color]);
     });
+
 }
 
 window.addEventListener('load', () => {
     task();
     video();
 })
+

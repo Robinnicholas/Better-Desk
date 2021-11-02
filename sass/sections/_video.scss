@@ -25,6 +25,11 @@
         }
     }
     &.paused{
+        a{
+            &::before{
+                content: none;
+            }
+        }
         .video-text-wrapper{
             .wrapper{
                 display: none;
@@ -96,8 +101,7 @@
     }
     video{
         width: 100%;
-        height: auto;
-        aspect-ratio: 16/9;
+        height: calc(100vh - 78px);
         object-fit: cover;
     }
 }

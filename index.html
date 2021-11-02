@@ -150,100 +150,89 @@
                 </div>
                 <div class="to-do">
                     <div class="to-do-list">
-                        <p>To Do List <span>6</span></p>
+                        <div class="wrapper">
+                            <p>To Do List</p>
+                            <span>6</span>
+                        </div>
                         <button>+ New</button>
                     </div>
                     <ul>
                         <li class="each-task">
                             <div class="wrapper-check">
-                                <div class="line"></div>
-                                <div class="dot"></div>
+                                <i class="line orangered"></i>
+                                <i class="dot orangered"></i>
                                 <div class="task">
                                     <p class="date">Today, 21 Oct</p>
                                     <p class="task-to-do">Prepare for presentation</p>
                                 </div>
                             </div>
-                            <div class="check-circle">
-                                <span class="checkmark"></span>
-                            </div>
+                            <span class="checkmark"></span>
                         </li>
                         <li class="each-task">
                             <div class="wrapper-check">
-                                <div class="line"></div>
-                                <div class="dot"></div>
+                                <i class="line orangered"></i>
+                                <i class="dot orangered"></i>
                                 <div class="task">
                                     <p class="date">Mon, 24 Oct</p>
-                                    <p class="task-to-do">Remind <span class="text-bold">John</span>to email the customer <span class="text-bold">Jessie Lee</span></p>
+                                    <p class="task-to-do">Remind <span class="text-bold">John</span> to email the customer <span class="text-bold">Jessie Lee</span></p>
                                 </div>
                             </div>
-                            <div class="check-circle">
-                                <span class="checkmark"></span>
-                            </div>
+                            <span class="checkmark"></span>
                         </li>
                         <li class="each-task">
                             <div class="wrapper-check">
-                                <div class="line"></div>
-                                <div class="dot"></div>
+                                <i class="line orange"></i>
+                                <i class="dot orange"></i>
                                 <div class="task">
                                     <p class="date">Mon, 24 Oct</p>
                                     <p class="task-to-do"><span class="text-bold">Pek</span> assigned you a task <span class="text-bold">Make a sales report</span></p>
                                 </div>
                             </div>
-                            <div class="check-circle">
-                                <span class="checkmark"></span>
-                            </div>
+                            <span class="checkmark"></span>
                         </li>
                         <li class="each-task">
                             <div class="wrapper-check">
-                                <div class="line"></div>
-                                <div class="dot"></div>
+                                <i class="line skyblue"></i>
+                                <i class="dot skyblue"></i>
                                 <div class="task">
                                     <p class="date">Mon, 24 Oct</p>
                                     <p class="task-to-do">Prepare for presentation</p>
                                 </div>
                             </div>
-                            <div class="check-circle">
-                                <span class="checkmark"></span>
-                            </div>
+                            <span class="checkmark"></span>
                         </li>
                         <li class="each-task">
                             <div class="wrapper-check">
-                                <div class="line"></div>
-                                <div class="dot"></div>
+                                <i class="line yellow"></i>
+                                <i class="dot yellow"></i>
                                 <div class="task">
                                     <p class="date">Mon, 24 Oct</p>
                                     <p class="task-to-do">Prepare for presentation</p>
                                 </div>
                             </div>
-                            <div class="check-circle">
-                                <span class="checkmark"></span>
-                            </div>
+                            <span class="checkmark"></span>
                         </li>
                         <li class="each-task">
                             <div class="wrapper-check">
-                                <div class="line"></div>
-                                <div class="dot"></div>
+                                <i class="line lime"></i>
+                                <i class="dot lime"></i>
                                 <div class="task">
                                     <p class="date">Mon, 24 Oct</p>
                                     <p class="task-to-do">Prepare for presentation</p>
                                 </div>
                             </div>
-                            <div class="check-circle">
-                                <span class="checkmark"></span>
-                            </div>
+                            <span class="checkmark"></span>
                         </li>
                         <li class="each-task">
                             <div class="wrapper-check">
-                                <div class="line"></div>
-                                <div class="dot"></div>
+                                <i class="line brown"></i>
+                                <i class="dot brown"></i>
                                 <div class="task">
                                     <p class="date">Mon, 24 Oct</p>
                                     <p class="task-to-do">Prepare for presentation</p>
                                 </div>
                             </div>
-                            <div class="check-circle">
-                                <span class="checkmark"></span>
-                            </div>
+                            <span class="checkmark"></span>
                         </li>
                     </ul>
                 </div>
@@ -316,14 +305,14 @@
                     <i class="fas fa-pause"></i>
                 </button>
             </div>
-            <video onclick="video()" src="./images/infinity-war.mp4" poster="./images/video.jpg"></video>
+            <video src="./images/infinity-war.mp4" poster="./images/video.jpg"></video>
         </a>
     </section>
 
     <section class="users">
         <div class="container">
             <ul class="user-details">
-                <li class="active">
+                <li class="active" data-poster="./images/video.jpg" data-src="./images/infinity-war.mp4">
                     <figure>
                         <img src="images/user-1.png" 
                             srcset="images/user-1.png 1x,
@@ -355,7 +344,7 @@
                         />
                     </div>
                 </li>
-                <li>
+                <li data-poster="./images/bird.jpg" data-src="./images/music.mp4">
                     <figure>
                         <img src="images/user-1.png" 
                             srcset="images/user-1.png 1x,
@@ -387,7 +376,7 @@
                         />
                     </div>
                 </li>
-                <li>
+                <li data-poster="./images/image-2.jpg" data-src="./images/fireworks.mp4">
                     <figure>
                         <img src="images/user-1.png" 
                             srcset="images/user-1.png 1x
@@ -419,7 +408,7 @@
                         />
                     </div>
                 </li>
-                <li>
+                <li data-poster="./images/game.jpg" data-src="./images/spiderman.mp4">
                     <figure>
                         <img src="images/user-1.png" 
                             srcset="images/user-1.png 1x,

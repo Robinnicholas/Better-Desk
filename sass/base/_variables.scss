@@ -33,3 +33,19 @@ $color-brown-medium: #39394d;
 $color-pink-light: #f3778f;
 $color-pink-medium: #f26a95;
 $color-pink-bold: #f15a9d;
+
+//list
+$colors : (
+    orangered : #f5474a,
+    orange : #f38428,
+    yellow : #e48365,
+    skyblue : #6cdbd5,
+    lime : #e9e768,
+    brown : brown,
+);
+
+@each $name,$color in $colors {
+    .#{$name}{
+        background-color : $color;
+    }
+}

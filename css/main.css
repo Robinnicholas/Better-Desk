@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap");
 @font-face {
   font-family: ProximaNova;
   src: url("//db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2") format("woff2");
@@ -67,6 +66,30 @@ table {
   padding: 0 20px;
 }
 
+.orangered {
+  background-color: #f5474a;
+}
+
+.orange {
+  background-color: #f38428;
+}
+
+.yellow {
+  background-color: #e48365;
+}
+
+.skyblue {
+  background-color: #6cdbd5;
+}
+
+.lime {
+  background-color: #e9e768;
+}
+
+.brown {
+  background-color: brown;
+}
+
 .btn {
   padding: 16px 8px;
   min-width: 120px;
@@ -114,7 +137,7 @@ table {
 
 .Chat-with-us .container .chat-services li a:hover .arrow, .about ul.about-links li a.learn-more:hover .arrow {
   transition: 0.25s;
-  margin-left: 15px;
+  transform: rotate(-45deg) translate(5px, 5px);
 }
 
 .Chat-with-us .container .chat-services li a::after, .about ul.about-links li a.learn-more::after {
@@ -625,9 +648,6 @@ header .burger {
 .why-we .our-vision .to-do .to-do-list {
   padding: 19px 40px;
   background-color: #f5f9fc;
-  position: sticky;
-  top: 0;
-  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -636,17 +656,18 @@ header .burger {
 .why-we .our-vision .to-do .to-do-list p {
   color: #4a4a4a;
   font-size: 20px;
+  display: inline-block;
 }
 
-.why-we .our-vision .to-do .to-do-list p span {
-  padding: 0 18px;
+.why-we .our-vision .to-do .to-do-list span {
+  padding: 2px 16px;
   background-color: #20bbef;
   color: #ffffff;
   border-radius: 16px;
   margin-left: 10px;
 }
 
-.why-we .our-vision .to-do .to-do-list p + button {
+.why-we .our-vision .to-do .to-do-list button {
   background-color: #20bbef;
   padding: 4px 14px;
   font-size: 18px;
@@ -678,45 +699,41 @@ header .burger {
   display: none;
 }
 
-.why-we .our-vision .to-do ul .each-task:nth-of-type(2n) .dot {
-  background-color: #f5474a;
-}
-
-.why-we .our-vision .to-do ul .each-task:nth-of-type(2n + 1) .dot {
-  background-color: #f38428;
+.why-we .our-vision .to-do ul .each-task:last-child .dot {
+  background-color: #6cdbd5;
 }
 
 .why-we .our-vision .to-do ul .each-task:first-child .dot {
   background-color: #6cdbd5;
 }
 
+.why-we .our-vision .to-do ul .each-task:first-child .line {
+  background-color: #6cdbd5;
+}
+
 .why-we .our-vision .to-do ul .each-task.checked .line {
-  background-color: #dadadb;
+  background-color: #e9edf2;
 }
 
 .why-we .our-vision .to-do ul .each-task.checked .dot {
-  background-color: #dadadb;
-}
-
-.why-we .our-vision .to-do ul .each-task.checked .task {
-  text-decoration: line-through;
-  color: #dadadb;
+  background-color: #e9edf2;
 }
 
 .why-we .our-vision .to-do ul .each-task.checked .task .date {
-  color: #dadadb;
+  text-decoration: line-through;
+  color: #54657e;
+  opacity: .6;
 }
 
 .why-we .our-vision .to-do ul .each-task.checked .task .task-to-do {
-  color: #dadadb;
+  text-decoration: line-through;
+  color: #606d78;
+  opacity: .6;
 }
 
-.why-we .our-vision .to-do ul .each-task.checked .check-circle {
+.why-we .our-vision .to-do ul .each-task.checked .checkmark {
   display: block;
   position: relative;
-}
-
-.why-we .our-vision .to-do ul .each-task.checked .check-circle .checkmark {
   top: 0;
   left: 0;
   height: 32px;
@@ -725,15 +742,15 @@ header .burger {
   border: 2px solid #dadfe5;
 }
 
-.why-we .our-vision .to-do ul .each-task.checked .check-circle .checkmark::after {
+.why-we .our-vision .to-do ul .each-task.checked .checkmark::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 9px;
-  width: 10px;
-  height: 16px;
+  top: 5px;
+  left: 10px;
+  width: 6px;
+  height: 14px;
   border: solid #dadfe5;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
 
@@ -743,7 +760,6 @@ header .burger {
 
 .why-we .our-vision .to-do ul .each-task .line {
   width: 1px;
-  background-color: #f38428;
   transform: translate(8px, 15px);
   height: 75px;
 }
@@ -761,20 +777,28 @@ header .burger {
 }
 
 .why-we .our-vision .to-do ul .each-task .task .date {
-  color: #606d78;
+  font-size: 15px;
+  color: #54657e;
   margin-bottom: 10px;
+  font-weight: 300;
 }
 
 .why-we .our-vision .to-do ul .each-task .task .task-to-do {
+  font-weight: 400;
+  font-size: 16px;
   color: #606d78;
 }
 
-.why-we .our-vision .to-do ul .each-task .check-circle .checkmark {
+.why-we .our-vision .to-do ul .each-task .task .task-to-do .text-bold {
+  font-weight: 600;
+}
+
+.why-we .our-vision .to-do ul .each-task .checkmark {
   display: block;
   width: 32px;
   height: 32px;
   background: transparent;
-  border: 3px solid #6cdbd5;
+  border: 2px solid #20bbef;
   border-radius: 50%;
 }
 
@@ -1027,10 +1051,6 @@ header .burger {
   display: none;
 }
 
-.video.playing a {
-  display: block;
-}
-
 .video.playing a::before {
   background-color: transparent;
 }
@@ -1060,7 +1080,7 @@ header .burger {
 }
 
 .video a {
-  display: inline-block;
+  display: block;
 }
 
 .video a::before {
@@ -1124,6 +1144,8 @@ header .burger {
 .video video {
   width: 100%;
   height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 992px) {
@@ -1379,12 +1401,18 @@ header .burger {
 }
 
 .footer div.footer-wrapper div.col-right ul li {
-  margin: 0 6px;
+  margin: 0 3px;
+}
+
+.footer div.footer-wrapper div.col-right ul li:first-child {
+  margin-right: 8px;
 }
 
 .footer div.footer-wrapper div.col-right ul li i {
   color: #ffffff;
   opacity: .6;
+  font-size: 16px;
+  width: 16px;
 }
 
 .footer div.footer-wrapper div.col-right ul li i:hover {

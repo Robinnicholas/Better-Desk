@@ -63,30 +63,28 @@
                 .to-do-list{
                     padding: 19px 40px;
                     background-color: #f5f9fc;
-                    position: sticky;
-                    top: 0;
-                    z-index: 2;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     p{
                         color: #4a4a4a;
                         font-size: 20px;
-                        span{
-                            padding: 0 18px;
-                            background-color:#20bbef;
-                            color:#ffffff;
-                            border-radius: 16px;
-                            margin-left: 10px;
-                        }
-                        + button{
-                            background-color: #20bbef;
-                            padding: 4px 14px;
-                            font-size: 18px;
-                            color: #ffffff;
-                            border: none;
-                            border-radius: 4px;
-                        }
+                        display: inline-block;  
+                    }
+                    span{
+                        padding: 2px 16px;
+                        background-color:#20bbef;
+                        color:#ffffff;
+                        border-radius: 16px;
+                        margin-left: 10px;
+                    }
+                    button{
+                        background-color: #20bbef;
+                        padding: 4px 14px;
+                        font-size: 18px;
+                        color: #ffffff;
+                        border: none;
+                        border-radius: 4px;
                     }
                 }
             ul{
@@ -104,43 +102,40 @@
                         .line{
                             display: none;
                         }
-                    }
-                    &:nth-of-type(2n){
                         .dot{
-                            background-color: #f5474a;
-                        }
-                    }
-                    &:nth-of-type(2n + 1){
-                        .dot{
-                            background-color: #f38428;
+                            background-color: #6cdbd5;
                         }
                     }
                     &:first-child{
                         .dot{
                             background-color: #6cdbd5;
                         }
+                        .line{
+                            background-color: #6cdbd5;
+                        }
                     }
                     &.checked{
                         .line{
-                            background-color:#dadadb;
+                            background-color:#e9edf2;
                         }
                         .dot{
-                            background-color:#dadadb;
+                            background-color:#e9edf2;
                         }
                         .task{
-                            text-decoration: line-through;
-                            color: #dadadb;
                             .date{
-                                color: #dadadb;
+                                text-decoration: line-through;
+                                color: #54657e;
+                                opacity: .6;
                             }
                             .task-to-do{
-                                color: #dadadb;
+                                text-decoration: line-through;
+                                color: #606d78;
+                                opacity: .6;
                             }
                         }
-                        .check-circle{
-                            display: block;
-                            position: relative;
-                            .checkmark{
+                        .checkmark{
+                                display: block;
+                                position: relative;
                                 top: 0;
                                 left: 0;
                                 height: 32px;
@@ -150,23 +145,21 @@
                                 &::after{
                                     content: "";
                                     position: absolute;
-                                    top: 3px;
-                                    left: 9px;
-                                    width: 10px;
-                                    height: 16px;
+                                    top: 5px;
+                                    left: 10px;
+                                    width: 6px;
+                                    height: 14px;
                                     border: solid #dadfe5;
-                                    border-width: 0 3px 3px 0;
+                                    border-width: 0 2px 2px 0;
                                     transform: rotate(45deg);
                                 }
                             }
-                        }
                     }
                     .wrapper-check{
                         display: flex;
                     }
                     .line{
                         width: 1px;
-                        background-color: #f38428;
                         transform: translate(8px,15px);
                         height: 75px;
                     }
@@ -180,23 +173,28 @@
                         text-align: left;
                         margin-left: 25px;
                         .date{
-                            color: #606d78;
+                            font-size: 15px;
+                            color: #54657e;
                             margin-bottom: 10px;
+                            font-weight: 300;
                         }
                         .task-to-do{
+                            font-weight: 400;
+                            font-size: 16px;
                             color: #606d78;
+                            .text-bold{
+                                font-weight: 600;   
+                            }
                         }
                     }
-                    .check-circle{
                         .checkmark{
                             display: block;
                             width: 32px;
                             height: 32px;
                             background: transparent;
-                            border: 3px solid #6cdbd5;
+                            border: 2px solid #20bbef;
                             border-radius: 50%;  
                         }
-                    }
                 }
             }
         }

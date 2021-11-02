@@ -23,7 +23,7 @@
     &:hover{
         .arrow{
             transition: 0.25s;   
-            margin-left: 15px;
+            transform: rotate(-45deg) translate(5px,5px);
         }
     }
     &::after{
